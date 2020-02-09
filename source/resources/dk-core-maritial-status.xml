@@ -14,6 +14,7 @@
       <valueSet value="http://hl7.org/fhir/ValueSet/marital-status" />
     </include>
     <include>
+      <system = "http://hl7.org/fhir/CodeSystem/dk-marital-status" />
       <concept>
         <code value="registered-partnership" />
         <display value="Registered partnership" />

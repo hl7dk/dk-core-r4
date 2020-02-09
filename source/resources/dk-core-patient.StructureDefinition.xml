@@ -20,20 +20,17 @@
         <key value="maritial-status-unknown-usage" />
         <requirements value="Maritial status is legally unknown in Denmark" />
         <severity value="warning" />
-        <human value="Legally unknown status in maritialStatus" />
+        <human value="Status in maritialStatus is unknown in a danish context. Consider mapping the value to UNK" />
         <expression value="TobeEvaluated" />
+        <source value="Patient" />
       </constraint>
     </element>
     <element id="Patient.identifier">
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
-          <type value="value" />
-          <path value="system" />
-        </discriminator>
-        <discriminator>
-          <type value="value" />
-          <path value="use" />
+          <type value="profile" />
+          <path value="resolve()" />
         </discriminator>
         <rules value="open" />
       </slicing>
@@ -51,33 +48,25 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name" />
-      <min value="1" />
-    </element>
-    <element id="Patient.name.extension">
-      <path value="Patient.name.extension" />
       <slicing>
         <discriminator>
           <type value="value" />
-          <path value="url" />
+          <path value="use" />
         </discriminator>
         <rules value="open" />
       </slicing>
+      <min value="1" />
     </element>
-    <element id="Patient.name.extension:middleName">
-      <path value="Patient.name.extension" />
-      <sliceName value="middleName" />
-      <type>
-        <code value="Extension" />
-        <profile value="http://hl7.nordic/fhir/StructureDefinition/nordic-middlename" />
-      </type>
+    <element id="Patient.name:official">
+      <path value="Patient.name" />
+      <sliceName value="official" />
+      <max value="1" />
     </element>
-    <element id="Patient.name.extension:middleName.value[x]">
-      <path value="Patient.name.extension.value[x]" />
-      <slicing>
-        <rules value="open" />
-      </slicing>
+    <element id="Patient.name:official.use">
+      <path value="Patient.name.use" />
+      <fixedCode value="official" />
     </element>
-    <element id="Patient.name.family">
+    <element id="Patient.name:official.family">
       <path value="Patient.name.family" />
       <min value="1" />
     </element>
@@ -110,13 +99,6 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-RegionalSubDivisionCodes" />
       </type>
-    </element>
-    <element id="Patient.maritalStatus">
-      <path value="Patient.maritalStatus" />
-      <binding>
-        <strength value="extensible" />
-        <valueSet value="http://hl7.org/fhir/ValueSet/dk-marital-status" />
-      </binding>
     </element>
   </differential>
 </StructureDefinition>
