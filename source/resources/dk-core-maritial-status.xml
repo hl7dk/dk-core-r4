@@ -16,7 +16,7 @@
     <include>
       <system = "http://hl7.org/fhir/CodeSystem/dk-marital-status" />
       <concept>
-        <code value="registered-partnership" />
+        <code value="DK-P" />
         <display value="Registered partnership" />
         <designation>
           <language value="da-DK" />
@@ -24,27 +24,11 @@
         </designation>
       </concept>
       <concept>
-        <code value="dissolved-partnership" />
+        <code value="DK-O" />
         <display value="Dissolved partnership" />
         <designation>
           <language value="da-DK" />
           <value value="Ophævet partnerskab" />
-        </designation>
-      </concept>
-      <concept>
-        <code value="longest-living-partner" />
-        <display value="Longest living partner" />
-        <designation>
-          <language value="da-DK" />
-          <value value="Længstlevende partner" />
-        </designation>
-      </concept>
-      <concept>
-        <code value="no-partnership" />
-        <display value="No partnership" />
-        <designation>
-          <language value="da-DK" />
-          <value value="Intet partnerskab" />
         </designation>
       </concept>
     </include>
