@@ -17,11 +17,11 @@
     <element id="Patient">
       <path value="Patient" />
       <constraint>
-        <key value="maritial-status-unknown-usage" />
-        <requirements value="Maritial status is legally unknown in Denmark" />
+        <key value="marital-status-unknown-usage" />
+        <requirements value="Marital status is legally unknown in Denmark" />
         <severity value="warning" />
-        <human value="Status in maritialStatus is unknown in a danish context. Consider mapping the value to UNK" />
-        <expression value="TobeEvaluated" />
+        <human value="Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK" />
+        <expression value="maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()" />
         <source value="Patient" />
       </constraint>
     </element>
@@ -29,16 +29,16 @@
       <path value="Patient.identifier" />
       <slicing>
         <discriminator>
-          <type value="profile" />
-          <path value="resolve()" />
+          <type value="value" />
+          <path value="system" />
         </discriminator>
         <rules value="open" />
       </slicing>
       <min value="1" />
     </element>
-    <element id="Patient.identifier:dk-core-crn-identifier">
+    <element id="Patient.identifier:cpr">
       <path value="Patient.identifier" />
-      <sliceName value="dk-core-crn-identifier" />
+      <sliceName value="cpr" />
       <min value="1" />
       <max value="1" />
       <type>
@@ -99,6 +99,13 @@
         <code value="Extension" />
         <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-RegionalSubDivisionCodes" />
       </type>
+    </element>
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.dk/fhir/ValueSet/dk-marital-status" />
+      </binding>
     </element>
   </differential>
 </StructureDefinition>
