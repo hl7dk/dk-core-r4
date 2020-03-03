@@ -1,0 +1,34 @@
+{
+  "experimental": false,
+  "publisher": "ehealth.sundhed.dk",
+  "version": "latest",
+  "concept": [
+    {
+      "code": "P",
+      "display": "Registered partnership",
+      "designation": [
+        {
+          "language": "da-DK",
+          "value": "Registreret partnerskab"
+        }
+      ]
+    },
+    {
+      "code": "O",
+      "display": "Dissolved partnership",
+      "designation": [
+        {
+          "language": "da-DK",
+          "value": "Ophævet partnerskab"
+        }
+      ]
+    }
+  ],
+  "content": "complete",
+  "url": "http://hl7.dk/fhir/CodeSystem/dk-marital-status",
+  "description": "DK marital statuses",
+  "status": "active",
+  "resourceType": "CodeSystem",
+  "date": "2019-01-29T00:00:00+00:00",
+  "id": "dk-marital-status"
+}

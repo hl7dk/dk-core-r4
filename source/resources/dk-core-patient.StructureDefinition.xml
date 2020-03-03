@@ -100,10 +100,10 @@
         <profile value="http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-RegionalSubDivisionCodes" />
       </type>
     </element>
-    <element id="Patient.maritalStatus">
-      <path value="Patient.maritalStatus" />
+    <element id="Patient.maritalStatus.coding.code">
+      <path value="Patient.maritalStatus.coding.code" />
       <binding>
-        <strength value="extensible" />
+        <strength value="preferred" />
         <valueSet value="http://hl7.dk/fhir/ValueSet/dk-marital-status" />
       </binding>
     </element>
