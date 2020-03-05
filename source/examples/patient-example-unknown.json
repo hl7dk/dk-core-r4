@@ -1,0 +1,27 @@
+{
+    "resourceType": "Patient",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-patient"
+        ]
+    },
+    "name": [
+        {
+            "use": "temp",
+            "family": "Ukendt",
+            "given": [
+                "Anders"
+            ]
+        
+        }
+        
+    ],
+    "identifier": [
+        {
+            "system": "http://rn.dk",
+            "value": "0706830VJ9"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1983-06-07"
+}
