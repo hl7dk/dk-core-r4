@@ -1,0 +1,14 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="dk-core-crn-identifier-codesystem"/>
+  <url value="http://hl7.org/fhir/CodeSystem/dk-crn-identifier-system"/>
+  <version value="latest"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-01-29T00:00:00+00:00"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <description value="Official CPR CodeSystem"/>
+  <content value="complete"/>
+  <concept>
+    <code value="urn:oid:1.2.208.176.1.2"/>
+  </concept>
+</CodeSystem>

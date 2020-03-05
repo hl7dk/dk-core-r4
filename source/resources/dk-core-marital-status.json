@@ -1,0 +1,47 @@
+{
+  "name": "DK Marital Status Codes",
+  "description": "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
+  "resourceType": "ValueSet",
+  "title": "MaritalStatus",
+  "date": "2019-11-01T09:29:23+11:00",
+  "status": "active",
+  "id": "dk-marital-status",
+  "compose": {
+    "include": [
+      
+      {
+        "valueSet": ["http://hl7.org/fhir/ValueSet/marital-status"]
+      },
+      {
+        "system": "http://hl7.dk/fhir/CodeSystem/dk-marital-status",
+        "concept": [
+          {
+            "code": "P",
+            "designation": [
+              {
+                "value": "Registreret partnerskab",
+                "language": "da-DK"
+              }
+            ],
+            "display": "Registered partnership"
+            
+          },
+          {
+            "code": "O",
+            "designation": [
+              {
+                "value": "Ophævet partnerskab",
+                "language": "da-DK"
+              }
+            ],
+            "display": "Dissolved partnership"
+            
+          }
+        ]
+      }
+    ]
+  },
+  "experimental": false,
+  "url": "http://hl7.dk/fhir/ValueSet/dk-marital-status",
+  "version": "4.0.1"
+}

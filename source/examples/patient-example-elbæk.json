@@ -1,0 +1,37 @@
+{
+    "resourceType": "Patient",
+    "meta": {
+        "profile": [
+            "http://hl7.org/fhir/dk/core/StructureDefinition/dk-core-patient"
+        ]
+    },
+    "name": [
+        {
+            "use": "official",
+            "family": "Elbæk",
+            "given": [
+                "Uffe"
+            ],
+            "prefix": [
+                "Mr"
+            ]
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://hl7.dk/fhir/CodeSystem/dk-marital-status",
+                "code": "P",
+                "display": "Registreret partnerskab"
+            }
+        ]
+    },
+    "identifier": [
+        {
+            "system": "urn:oid:1.2.208.176.1.2",
+            "value": "1112640001"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1964-12-11"
+}

@@ -1,0 +1,19 @@
+{
+    "resourceType": "EpisodeOfCare",
+    "meta": {
+        "profile": [
+            "http://hl7.dk/fhir/StructureDefinition/dk-core-episodeOfCare"
+        ]
+    },
+    "id": "episodeOfCare-example",
+    "identifier": [
+        {
+            "system": "https://www.esundhed.dk/Registre/Landspatientsregisteret",
+            "value": "dbe60a09-1719-4b16-83dd-"
+        }
+    ],
+    "status": "active",
+    "patient": {
+        "reference": "Patient/example"
+    }
+}
