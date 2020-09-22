@@ -102,9 +102,12 @@
         <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes" />
       </type>
     </element>
-    <element id="Patient.maritalStatus.coding.system">
-      <path value="Patient.maritalStatus.coding.system" />
-      <fixedUri value="http://hl7.dk/fhir/core/CodeSystem/dk-marital-status" />
+    <element id="Patient.maritalStatus">
+      <path value="Patient.maritalStatus" />
+      <binding>
+        <strength value="extensible" />
+        <valueSet value="http://hl7.dk/fhir/core/ValueSet/dk-marital-status" />
+      </binding>
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner" />

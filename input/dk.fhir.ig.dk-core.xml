@@ -12,6 +12,11 @@
                 <generation value="markdown"/>
             </page>
             <page>
+                <nameUrl value="guidance.html"/>
+                <title value="Guidance"/>
+                <generation value="markdown"/>
+            </page>
+            <page>
                 <nameUrl value="profiles.html"/>
                 <title value="Profiles"/>
                 <generation value="html"/>
@@ -102,20 +107,9 @@
             <description value="Example of valid patient unknown identifier registry. The patient is a 'John Doe' with an Identifier from an unofficial register"/>
             <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
         </resource>
-        <resource>
-            <reference>
-                <reference value="EpisodeOfCare/episodeOfCare-example"/></reference>
-            <name value="Example of valid use of a LPR3 identifier"/>
-            <description value="Example of valid use of a LPR3 identifier"/>
-            <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-episodeOfCare"/>
-        </resource>
-        <resource>
-            <reference>
-                <reference value="EpisodeOfCare/episodeOfCare-example-wrong"/></reference>
-            <name value="Example of INVALID use of a LPR3 identifier (ID does not conform to a UUID)"/>
-            <description value="Example of INVALID use of a LPR3 identifier (ID does not conform to a UUID). UUID's must conform to the proper regex"/>
-            <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-episodeOfCare"/>
-        </resource>
+        
+        
+        
     </definition>
     <title value='DK Core (R4)'/>
     <packageId value='dk.fhir.ig.dk-core'/>

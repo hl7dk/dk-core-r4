@@ -2,7 +2,7 @@
   "name": "DK Marital Status Codes",
   "description": "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark.",
   "resourceType": "ValueSet",
-  "title": "MaritalStatus",
+  "title": "DK MaritalStatus",
   "date": "2019-11-01T09:29:23+11:00",
   "status": "active",
   "id": "dk-marital-status",
