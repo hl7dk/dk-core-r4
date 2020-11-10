@@ -10,15 +10,6 @@
       "path": "http://build.fhir.org/ig/hl7dk/dk-core",
       "status": "ci-build",
       "fhirVersion": "4.0.1"
-    },
-    {
-      "version": "0.9.0",
-      "date": "2020-02-14",
-      "desc": "HL7 Denmark STU Ballot",
-      "path": "http://hl7.dk/fhir/ig/dk-core",
-      "status": "trial-use",
-      "sequence": "STU",
-      "fhirVersion": "4.0.1",
       "current": true
     }
   ]
