@@ -5,7 +5,7 @@
   "canonical": "http://hl7.dk/fhir/ig/dk-core",
   "list": [
     {
-      "version": "dev",
+      "version": "current",
       "desc": "Continuous Integration Build (latest in version control)",
       "path": "http://build.fhir.org/ig/hl7dk/dk-core",
       "status": "ci-build",
