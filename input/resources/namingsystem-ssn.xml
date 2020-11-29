@@ -1,14 +1,14 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="cpr" />
-  <url value="http://hl7.dk/fhir/core/NamingSystem/dk-core-cpr"/>
+  <!--<url value="http://hl7.dk/fhir/core/NamingSystem/dk-core-cpr"/>-->
   <name value="DanishCivilRegistrationSystem" />
   <status value="active" />
   <kind value="identifier" />
   <date value="1968-04-02" />
   <publisher value="Sundhedsdatastyrelsen?" />
-  <contact>
+  <!--<contact>
     <name value="Thor Schliemann" />
-  </contact>
+  </contact>-->
   <responsible value="CPR-kontoret, Økonomi- og Indenrigsministeriets departement" />
    <type>
     <coding>

@@ -40,7 +40,6 @@
     <element id="Patient.identifier:cpr">
       <path value="Patient.identifier" />
       <sliceName value="cpr" />
-      <min value="1" />
       <max value="1" />
       <type>
         <code value="Identifier" />

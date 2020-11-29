@@ -74,7 +74,7 @@
         </grouping>
         <resource>
             <reference>
-                <reference value="Patient/uffe"/></reference>
+                <reference value="Patient/mogensen"/></reference>
             <name value="Example of valid patient with danish marital status"/>
             <description value="Example of valid patient with danish marital status"/>
             <exampleCanonical value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
