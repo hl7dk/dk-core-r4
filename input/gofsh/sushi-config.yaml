@@ -1,0 +1,8 @@
+canonical: http://hl7.dk/fhir/core
+fhirVersion: 4.0.1
+FSHOnly: true
+applyExtensionMetadataToRoot: false
+id: dk.fhir.ig.dk-core
+name: DK_Core
+status: active
+version: 0.9.0
