@@ -3,6 +3,11 @@ Description: "Authorization ID consists of exactly 5 consonants and Y and or num
 Severity: #error
 Expression: "matches('^([b-df-hj-np-tv-zB-DF-HJ-NP-TV-Z0-9]){5}$')"
 
+Invariant: min-digits-sor
+Description: "SOR Identifiers are at minimum 15 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf"
+Severity: #error
+Expression: "matches('^([0-9]){15,}$')"
+
 Invariant: cpr
 Description: "Requirement of danish civil registration numbers"
 Severity: #error
@@ -12,11 +17,6 @@ Invariant: marital-status-unknown-usage
 Description: "Status in maritalStatus is unknown in a danish context. Consider mapping the value to UNK"
 Severity: #warning
 Expression: "maritalStatus.coding.where(code = 'P' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty() or maritalStatus.coding.where(code = 'A' and system = 'http://terminology.hl7.org/CodeSystem/v3-MaritalStatus').empty()"
-
-Invariant: min-digits-sor
-Description: "SOR Identifiers are at minimum 15 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf"
-Severity: #error
-Expression: "matches('^([0-9]){15,}$')"
 
 Invariant: uuid
 Description: "LPR3 episode of care identifiers must conform to a UUID"
