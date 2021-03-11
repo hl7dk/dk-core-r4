@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="ukendt"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0706830VJ9</p><p><b>name</b>: Anders Ukendt (TEMP)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-06-07</p></div>
+  </text>
+  <identifier>
+    <system value="http://rn.dk"/>
+    <value value="0706830VJ9"/>
+  </identifier>
+  <name>
+    <use value="temp"/>
+    <family value="Ukendt"/>
+    <given value="Anders"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1983-06-07"/>
+</Patient>

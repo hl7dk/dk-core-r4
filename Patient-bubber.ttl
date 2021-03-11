@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Patient/bubber> a fhir:Patient;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bubber"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient";
+       fhir:index 0;
+       fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1112640001</p><p><b>name</b>: Niels Christian Meyer (OFFICIAL), Bubber </p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1964-12-11</p><p><b>generalPractitioner</b>: <span>Charlottenlund Lægehus</span></p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.2" ];
+     fhir:Identifier.value [ fhir:value "1112640001" ]
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Meyer" ];
+     fhir:HumanName.given [
+       fhir:value "Niels";
+       fhir:index 0
+     ], [
+       fhir:value "Christian";
+       fhir:index 1
+     ];
+     fhir:HumanName.prefix [
+       fhir:value "Mr";
+       fhir:index 0
+     ]
+  ], [
+     fhir:index 1;
+     fhir:HumanName.use [ fhir:value "usual" ];
+     fhir:HumanName.given [
+       fhir:value "Bubber";
+       fhir:index 0
+     ]
+  ];
+  fhir:Patient.gender [ fhir:value "male"];
+  fhir:Patient.birthDate [ fhir:value "1964-12-11"^^xsd:date];
+  fhir:Patient.generalPractitioner [
+     fhir:index 0;
+     fhir:Reference.identifier [
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
+       fhir:Identifier.value [ fhir:value "487341000016005" ]
+     ];
+     fhir:Reference.display [ fhir:value "Charlottenlund Lægehus" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/Patient/bubber.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

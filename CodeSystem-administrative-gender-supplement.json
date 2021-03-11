@@ -1,0 +1,71 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "administrative-gender-supplement",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p/><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"administrative-gender-supplement-male\"> </a></td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"administrative-gender-supplement-female\"> </a></td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"administrative-gender-supplement-other\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"administrative-gender-supplement-unknown\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>male</td><td>Mand</td></tr><tr><td>female</td><td>Kvinde</td></tr><tr><td>other</td><td>Andet</td></tr><tr><td>unknown</td><td>Ukendt</td></tr></table></div>"
+  },
+  "url": "http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement",
+  "version": "0.1.0",
+  "name": "AdministrativeGenderDkSupplement",
+  "status": "draft",
+  "experimental": true,
+  "date": "2020-07-27",
+  "publisher": "ehealth.sundhed.dk",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.dk/fhir/"
+        }
+      ]
+    }
+  ],
+  "description": "CodeSystem supplement with danish translations for administrative gender",
+  "content": "supplement",
+  "supplements": "http://hl7.org/fhir/administrative-gender",
+  "concept": [
+    {
+      "code": "male",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Mand"
+        }
+      ]
+    },
+    {
+      "code": "female",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Kvinde"
+        }
+      ]
+    },
+    {
+      "code": "other",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Andet"
+        }
+      ]
+    },
+    {
+      "code": "unknown",
+      "designation": [
+        {
+          "language": "da",
+          "value": "Ukendt"
+        }
+      ]
+    }
+  ]
+}

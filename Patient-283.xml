@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="283"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0506504005 (OFFICIAL)</p><p><b>name</b>: Torsteinn Lind (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1950-06-04</p><p><b>address</b>: Nordre Ringgade 3 Frederiksberg C 8000 DK (HOME)</p><p><b>maritalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus U}">unmarried</span></p><p><b>generalPractitioner</b>: <span>Peter Sønderby</span></p></div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="0506504005"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Lind"/>
+    <given value="Torsteinn"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1950-06-04"/>
+  <address>
+    <extension url="http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
+          <code value="0330"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+          <code value="DK-85"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <use value="home"/>
+    <type value="postal"/>
+    <line value="Nordre Ringgade 3"/>
+    <city value="Frederiksberg C"/>
+    <postalCode value="8000"/>
+    <country value="DK"/>
+  </address>
+  <maritalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
+      <code value="U"/>
+      <display value="unmarried"/>
+    </coding>
+  </maritalStatus>
+  <generalPractitioner>
+    <identifier>
+      <system value="urn:oid:1.2.208.176.1.4"/>
+      <value value="79641000016006"/>
+    </identifier>
+    <display value="Peter S&#xF8;nderby"/>
+  </generalPractitioner>
+</Patient>

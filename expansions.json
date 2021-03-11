@@ -1,0 +1,664 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "4824726d-b38c-449d-8d37-16055535c202",
+  "meta" : {
+    "lastUpdated" : "2021-03-11T19:56:45.125+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "dk-core-cpr-identifier-system",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-dk-core-cpr-identifier-system.html\">DkCoreCprIdentifierSystem v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-dk-core-cpr-identifier-system.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-cpr-identifier-system-urn-oid-1.2.208.176.1.2\"> </a><a href=\"CodeSystem-dk-core-cpr-identifier-system.html#dk-core-cpr-identifier-system-urn.58oid.581.462.46208.46176.461.462\">urn:oid:1.2.208.176.1.2</a></td><td>OID representation of CPR</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system",
+      "version" : "0.1.0",
+      "name" : "DK Valid Identifier",
+      "title" : "CPR Identifier",
+      "status" : "active",
+      "experimental" : false,
+      "date" : "2019-11-01T09:29:23+11:00",
+      "description" : "This value set defines the set of codes that can be used to identify the danish CPR system.",
+      "expansion" : {
+        "identifier" : "urn:uuid:815088e6-6b6e-49d8-88bc-8a1ef1d9c4f0",
+        "timestamp" : "2021-03-11T19:56:56+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system",
+          "code" : "urn:oid:1.2.208.176.1.2",
+          "display" : "OID representation of CPR"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "dk-core-MunicipalityCodes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 104 concepts</p><div style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\"><p>Expansion based on: </p><ul><li><a href=\"CodeSystem-dk-core-municipality-codes-greenland.html\">GreenlandMunicipalityCodes v0.1.0 (CodeSystem)</a></li><li><a href=\"CodeSystem-dk-core-municipality-codes.html\">MunicipalityCodes v0.1.0 (CodeSystem)</a></li></ul></div><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0740\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0740\">0740</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Silkeborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0741\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0741\">0741</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Samsø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0851\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0851\">0851</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Aalborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0746\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0746\">0746</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Skanderborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0151\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0151\">0151</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Ballerup</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0260\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0260\">0260</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Halsnæs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0153\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0153\">0153</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Brøndby</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0370\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0370\">0370</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Næstved</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0155\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0155\">0155</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Dragør</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0480\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0480\">0480</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Nordfyns</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0157\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0157\">0157</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Gentofte</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0265\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0265\">0265</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Roskilde</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0159\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0159\">0159</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Gladsaxe</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0376\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0376\">0376</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Guldborgsund</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0269\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0269\">0269</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Solrød</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0482\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0482\">0482</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Langeland</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0201\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0201\">0201</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Allerød</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0420\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0420\">0420</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Assens</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0530\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0530\">0530</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Billund</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0316\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0316\">0316</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Holbæk</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0751\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0751\">0751</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Aarhus</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0860\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0860\">0860</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Hjørring</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0756\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0756\">0756</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Ikast-Brande</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0161\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0161\">0161</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Glostrup</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0270\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0270\">0270</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Gribskov</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0163\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0163\">0163</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Herlev</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0165\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0165\">0165</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Albertslund</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0167\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0167\">0167</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Hvidovre</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0492\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0492\">0492</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Ærø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0169\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0169\">0169</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Høje-Taastrup</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0101\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0101\">0101</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>København</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0210\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0210\">0210</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Fredensborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0320\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0320\">0320</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Faxe</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0430\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0430\">0430</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Faaborg-Midtfyn</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0540\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0540\">0540</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Sønderborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0217\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0217\">0217</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Helsingør</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0326\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0326\">0326</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Kalundborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0219\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0219\">0219</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Hillerød</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0760\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0760\">0760</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Ringkøbing-Skjern</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0329\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0329\">0329</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Ringsted</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0657\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0657\">0657</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Herning</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0766\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0766\">0766</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Hedensted</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0173\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0173\">0173</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Lyngby-Taarbæk</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0390\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0390\">0390</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Vordingborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0175\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0175\">0175</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Rødovre</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0810\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0810\">0810</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Brønderslev</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0813\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0813\">0813</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Frederikshavn</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0706\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0706\">0706</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Syddjurs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0707\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0707\">0707</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Norddjurs</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0330\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0330\">0330</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Slagelse</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0223\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0223\">0223</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Hørsholm</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0440\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0440\">0440</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Kerteminde</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0550\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0550\">0550</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Tønder</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0336\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0336\">0336</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Stevns</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0661\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0661\">0661</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Holstebro</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0665\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0665\">0665</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Lemvig</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0773\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0773\">0773</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Morsø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0779\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0779\">0779</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Skive</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0183\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0183\">0183</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Ishøj</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0185\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0185\">0185</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Tårnby</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0710\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0710\">0710</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Favrskov</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0187\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0187\">0187</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Vallensbæk</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0820\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0820\">0820</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Vesthimmerland</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0607\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0607\">0607</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Fredericia</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0825\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0825\">0825</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Læsø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0230\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0230\">0230</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Rudersdal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0340\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0340\">0340</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Sorø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0450\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0450\">0450</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Nyborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0561\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0561\">0561</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Esbjerg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0563\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0563\">0563</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Fanø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0671\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0671\">0671</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Struer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0190\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0190\">0190</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Furesø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0787\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0787\">0787</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Thisted</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0615\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0615\">0615</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Horsens</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0727\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0727\">0727</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Odder</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0240\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0240\">0240</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Egedal</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0350\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0350\">0350</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Lejre</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0461\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0461\">0461</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Odense</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0573\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0573\">0573</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Varde</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0575\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0575\">0575</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Vejen</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0791\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0791\">0791</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Viborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0400\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0400\">0400</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Bornholm</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0510\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0510\">0510</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Haderslev</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0621\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0621\">0621</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Kolding</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0730\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0730\">0730</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Randers</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0840\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0840\">0840</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Rebild</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0846\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0846\">0846</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Mariagerfjord</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0250\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0250\">0250</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Frederikssund</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0360\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0360\">0360</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Lolland</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0253\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0253\">0253</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Greve</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0849\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0849\">0849</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Jammerbugt</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0147\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0147\">0147</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Frederiksberg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0580\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0580\">0580</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Aabenraa</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0259\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0259\">0259</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Køge</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0479\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0479\">0479</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Svendborg</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0410\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0410\">0410</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Middelfart</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0411\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0411\">0411</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Christiansø</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0306\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0306\">0306</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Odsherred</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-0630\"> </a><a href=\"CodeSystem-dk-core-municipality-codes.html#dk-core-municipality-codes-0630\">0630</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes</td><td>Vejle</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-greenland-0955\"> </a><a href=\"CodeSystem-dk-core-municipality-codes-greenland.html#dk-core-municipality-codes-greenland-0955\">0955</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</td><td>Kujalleq</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-greenland-0956\"> </a><a href=\"CodeSystem-dk-core-municipality-codes-greenland.html#dk-core-municipality-codes-greenland-0956\">0956</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</td><td>Sermersooq</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-greenland-0957\"> </a><a href=\"CodeSystem-dk-core-municipality-codes-greenland.html#dk-core-municipality-codes-greenland-0957\">0957</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</td><td>Qeqqata</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-greenland-0959\"> </a><a href=\"CodeSystem-dk-core-municipality-codes-greenland.html#dk-core-municipality-codes-greenland-0959\">0959</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</td><td>Qeqertalik</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-municipality-codes-greenland-0960\"> </a><a href=\"CodeSystem-dk-core-municipality-codes-greenland.html#dk-core-municipality-codes-greenland-0960\">0960</a></td><td>http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland</td><td>Avannaata</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
+      "version" : "0.1.0",
+      "name" : "MunicipalityCodes",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2019-02-02T00:00:00+00:00",
+      "publisher" : "ehealth.sundhed.dk",
+      "description" : "Municipality codes used in Denmark",
+      "expansion" : {
+        "identifier" : "urn:uuid:745de604-8eb3-4006-ada1-2eb493bd8843",
+        "timestamp" : "2021-03-11T19:56:56+00:00",
+        "total" : 104,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|0.1.0"
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0740",
+          "display" : "Silkeborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0741",
+          "display" : "Samsø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0851",
+          "display" : "Aalborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0746",
+          "display" : "Skanderborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0151",
+          "display" : "Ballerup"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0260",
+          "display" : "Halsnæs"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0153",
+          "display" : "Brøndby"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0370",
+          "display" : "Næstved"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0155",
+          "display" : "Dragør"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0480",
+          "display" : "Nordfyns"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0157",
+          "display" : "Gentofte"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0265",
+          "display" : "Roskilde"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0159",
+          "display" : "Gladsaxe"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0376",
+          "display" : "Guldborgsund"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0269",
+          "display" : "Solrød"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0482",
+          "display" : "Langeland"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0201",
+          "display" : "Allerød"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0420",
+          "display" : "Assens"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0530",
+          "display" : "Billund"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0316",
+          "display" : "Holbæk"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0751",
+          "display" : "Aarhus"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0860",
+          "display" : "Hjørring"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0756",
+          "display" : "Ikast-Brande"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0161",
+          "display" : "Glostrup"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0270",
+          "display" : "Gribskov"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0163",
+          "display" : "Herlev"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0165",
+          "display" : "Albertslund"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0167",
+          "display" : "Hvidovre"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0492",
+          "display" : "Ærø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0169",
+          "display" : "Høje-Taastrup"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0101",
+          "display" : "København"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0210",
+          "display" : "Fredensborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0320",
+          "display" : "Faxe"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0430",
+          "display" : "Faaborg-Midtfyn"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0540",
+          "display" : "Sønderborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0217",
+          "display" : "Helsingør"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0326",
+          "display" : "Kalundborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0219",
+          "display" : "Hillerød"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0760",
+          "display" : "Ringkøbing-Skjern"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0329",
+          "display" : "Ringsted"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0657",
+          "display" : "Herning"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0766",
+          "display" : "Hedensted"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0173",
+          "display" : "Lyngby-Taarbæk"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0390",
+          "display" : "Vordingborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0175",
+          "display" : "Rødovre"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0810",
+          "display" : "Brønderslev"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0813",
+          "display" : "Frederikshavn"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0706",
+          "display" : "Syddjurs"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0707",
+          "display" : "Norddjurs"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0330",
+          "display" : "Slagelse"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0223",
+          "display" : "Hørsholm"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0440",
+          "display" : "Kerteminde"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0550",
+          "display" : "Tønder"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0336",
+          "display" : "Stevns"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0661",
+          "display" : "Holstebro"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0665",
+          "display" : "Lemvig"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0773",
+          "display" : "Morsø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0779",
+          "display" : "Skive"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0183",
+          "display" : "Ishøj"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0185",
+          "display" : "Tårnby"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0710",
+          "display" : "Favrskov"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0187",
+          "display" : "Vallensbæk"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0820",
+          "display" : "Vesthimmerland"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0607",
+          "display" : "Fredericia"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0825",
+          "display" : "Læsø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0230",
+          "display" : "Rudersdal"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0340",
+          "display" : "Sorø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0450",
+          "display" : "Nyborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0561",
+          "display" : "Esbjerg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0563",
+          "display" : "Fanø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0671",
+          "display" : "Struer"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0190",
+          "display" : "Furesø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0787",
+          "display" : "Thisted"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0615",
+          "display" : "Horsens"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0727",
+          "display" : "Odder"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0240",
+          "display" : "Egedal"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0350",
+          "display" : "Lejre"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0461",
+          "display" : "Odense"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0573",
+          "display" : "Varde"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0575",
+          "display" : "Vejen"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0791",
+          "display" : "Viborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0400",
+          "display" : "Bornholm"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0510",
+          "display" : "Haderslev"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0621",
+          "display" : "Kolding"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0730",
+          "display" : "Randers"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0840",
+          "display" : "Rebild"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0846",
+          "display" : "Mariagerfjord"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0250",
+          "display" : "Frederikssund"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0360",
+          "display" : "Lolland"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0253",
+          "display" : "Greve"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0849",
+          "display" : "Jammerbugt"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0147",
+          "display" : "Frederiksberg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0580",
+          "display" : "Aabenraa"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0259",
+          "display" : "Køge"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0479",
+          "display" : "Svendborg"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0410",
+          "display" : "Middelfart"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0411",
+          "display" : "Christiansø"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0306",
+          "display" : "Odsherred"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
+          "code" : "0630",
+          "display" : "Vejle"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
+          "code" : "0955",
+          "display" : "Kujalleq"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
+          "code" : "0956",
+          "display" : "Sermersooq"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
+          "code" : "0957",
+          "display" : "Qeqqata"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
+          "code" : "0959",
+          "display" : "Qeqertalik"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
+          "code" : "0960",
+          "display" : "Avannaata"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "dk-core-RegionalSubDivisionCodes",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-dk-core-regional-subdivision-codes.html\">Regional subdivision codes v0.1.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-dk-core-regional-subdivision-codes.html\"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-84\"> </a><a href=\"CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-84\">DK-84</a></td><td>Capital Region of Denmark</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-82\"> </a><a href=\"CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-82\">DK-82</a></td><td>Central Denmark Region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-81\"> </a><a href=\"CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-81\">DK-81</a></td><td>Nord Denmark Region</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-85\"> </a><a href=\"CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-85\">DK-85</a></td><td>Region Zealand</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.dk-fhir-core-CodeSystem-dk-core-regional-subdivision-codes-DK-83\"> </a><a href=\"CodeSystem-dk-core-regional-subdivision-codes.html#dk-core-regional-subdivision-codes-DK-83\">DK-83</a></td><td>Region of Southern Denmark</td><td/></tr></table></div>"
+      },
+      "url" : "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
+      "version" : "0.1.0",
+      "name" : "RegionalSubdivisionCodes",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2019-02-02",
+      "publisher" : "ehealth.sundhed.dk",
+      "description" : "Subdivision codes (Regional codes) used in Denmark",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166-2:DK-2",
+          "code" : "ISO"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9126d309-0345-4d7e-9050-e523c8750bfe",
+        "timestamp" : "2021-03-11T19:56:56+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+          "code" : "DK-84",
+          "display" : "Capital Region of Denmark"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+          "code" : "DK-82",
+          "display" : "Central Denmark Region"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+          "code" : "DK-81",
+          "display" : "Nord Denmark Region"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+          "code" : "DK-85",
+          "display" : "Region Zealand"
+        },
+        {
+          "system" : "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
+          "code" : "DK-83",
+          "display" : "Region of Southern Denmark"
+        }]
+      }
+    }
+  }]
+}

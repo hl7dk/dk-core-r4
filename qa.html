@@ -1,0 +1,962 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 142, errors = 4, warn = 16, info = 10 -->
+<head>
+  <title>DK_Core : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for DK_Core</h1>
+ <p>Generated Thu Mar 11 19:57:04 UTC 2021, FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.1.0 (canonical = <a href="http://hl7.dk/fhir/core">http://hl7.dk/fhir/core</a> (<a href="http://hl7.dk/fhir/core/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.63</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = dk.fhir.ig.dk-core, Canonical = http://hl7.dk/fhir/core</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">No entry in the package-list.json file for this version</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> dk.fhir.ig.dk-core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.dk/fhir/core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://hl7.dk/fhir/core (Problem #1 with package-list.json at http://hl7.dk/fhir/core: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 142, errors = 4, warn = 16, info = 10</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>143</b></td><td><b>6</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-administrative-gender-supplement"><b>/github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-dk-core-cpr-identifier-system"><b>/github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-dk-core-municipality-codes"><b>/github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-dk-core-municipality-codes-greenland"><b>/github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-dk-core-regional-subdivision-codes"><b>/github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-dk-marital-status"><b>/github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-dk.fhir.ig.dk-core"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-dk.fhir.ig.dk-core</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-cpr"><b>/github/workspace/fsh-generated/resources/NamingSystem-cpr</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_NamingSystem-sor"><b>/github/workspace/fsh-generated/resources/NamingSystem-sor</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-283"><b>/github/workspace/fsh-generated/resources/Patient-283</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-bubber"><b>/github/workspace/fsh-generated/resources/Patient-bubber</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-mogensen"><b>/github/workspace/fsh-generated/resources/Patient-mogensen</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-ukendt"><b>/github/workspace/fsh-generated/resources/Patient-ukendt</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-AuthorizationIdentifier"><b>/github/workspace/fsh-generated/resources/StructureDefinition-AuthorizationIdentifier</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-RegionalSubDivisionCodes"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-cpr-identifier"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-municipalityCodes"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-patient"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-sor-identifier"><b>/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-lpr3-Identifier"><b>/github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-MunicipalityCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-RegionalSubDivisionCodes"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-core-cpr-identifier-system"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-core-cpr-identifier-system</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-dk-marital-status"><b>/github/workspace/fsh-generated/resources/ValueSet-dk-marital-status</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>3</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[22].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/AuthorizationIdentifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/lpr3-Identifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-sor-identifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-municipalityCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-RegionalSubDivisionCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-administrative-gender-supplement.change.history.html#60b00cbd-8e8f-4d86-80c8-971bbe73af03">CodeSystem-administrative-gender-supplement.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-administrative-gender-supplement.html#5230f888-4044-4680-9032-3d9c593c7cc6">CodeSystem-administrative-gender-supplement.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-administrative-gender-supplement.json.html#8512191f-c97c-4116-bd40-f1ac8931c6ca">CodeSystem-administrative-gender-supplement.json.html#/html/body/div/div/div/p/a at Line 255, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-administrative-gender-supplement.ttl.html#5a6f67db-a9d6-40d1-ad55-7135c24b3dfe">CodeSystem-administrative-gender-supplement.ttl.html#/html/body/div/div/div/p/a at Line 261, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-administrative-gender-supplement.xml.html#f24b98e1-adb7-4b4d-90b9-529c4a0883b3">CodeSystem-administrative-gender-supplement.xml.html#/html/body/div/div/div/p/a at Line 241, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-cpr-identifier-system.change.history.html#d2a97420-d628-4d71-bbde-454eff18688d">CodeSystem-dk-core-cpr-identifier-system.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-cpr-identifier-system.html#9e2da343-c992-4555-9516-15e67b478399">CodeSystem-dk-core-cpr-identifier-system.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-cpr-identifier-system.json.html#413fd7ce-8ac6-407b-8a3d-dda1033d673c">CodeSystem-dk-core-cpr-identifier-system.json.html#/html/body/div/div/div/p/a at Line 207, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-cpr-identifier-system.ttl.html#fe164427-28f9-47a6-b7f7-998d20bfaf41">CodeSystem-dk-core-cpr-identifier-system.ttl.html#/html/body/div/div/div/p/a at Line 220, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-cpr-identifier-system.xml.html#8134e33c-de47-40b2-ba75-d0ec7845927d">CodeSystem-dk-core-cpr-identifier-system.xml.html#/html/body/div/div/div/p/a at Line 205, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes-greenland.change.history.html#682851d9-a97e-4282-be09-9f83f52bcf86">CodeSystem-dk-core-municipality-codes-greenland.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes-greenland.html#7d404516-f9aa-43a1-8f18-599ce21921f7">CodeSystem-dk-core-municipality-codes-greenland.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes-greenland.json.html#62f1b535-c53a-4052-82ae-26c93242d9d9">CodeSystem-dk-core-municipality-codes-greenland.json.html#/html/body/div/div/div/p/a at Line 254, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes-greenland.ttl.html#46150a8f-2875-4830-af12-49a8d2f4651d">CodeSystem-dk-core-municipality-codes-greenland.ttl.html#/html/body/div/div/div/p/a at Line 257, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes-greenland.xml.html#322e54c8-3ac6-4f39-8704-ec4460b9de36">CodeSystem-dk-core-municipality-codes-greenland.xml.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes.change.history.html#909374a4-9be5-4562-81d6-e16ab3d7feed">CodeSystem-dk-core-municipality-codes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes.html#369b408f-63f1-421c-ba27-322680368030">CodeSystem-dk-core-municipality-codes.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes.json.html#c3e49362-c527-4c97-96b8-1600a74b4100">CodeSystem-dk-core-municipality-codes.json.html#/html/body/div/div/div/p/a at Line 1194, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes.ttl.html#3165457d-122a-4cde-b343-c5435bbc78b4">CodeSystem-dk-core-municipality-codes.ttl.html#/html/body/div/div/div/p/a at Line 1009, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-municipality-codes.xml.html#66a941cb-c282-41a5-9d18-2218e0235ff8">CodeSystem-dk-core-municipality-codes.xml.html#/html/body/div/div/div/p/a at Line 995, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-regional-subdivision-codes.change.history.html#94cfd180-c8e6-4e2d-ad0a-b19be6ae39e6">CodeSystem-dk-core-regional-subdivision-codes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-regional-subdivision-codes.html#e1ad15a0-a4c5-4812-a56e-b91f9459a266">CodeSystem-dk-core-regional-subdivision-codes.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-regional-subdivision-codes.json.html#ee7de95f-f85c-4e0c-a9b2-bb21ec1bbe90">CodeSystem-dk-core-regional-subdivision-codes.json.html#/html/body/div/div/div/p/a at Line 253, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-regional-subdivision-codes.ttl.html#c0f5d91e-a5b1-4532-8d04-44806f673eac">CodeSystem-dk-core-regional-subdivision-codes.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-core-regional-subdivision-codes.xml.html#3e2afbbb-e55b-4ee5-ba58-947836b8d1db">CodeSystem-dk-core-regional-subdivision-codes.xml.html#/html/body/div/div/div/p/a at Line 243, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-marital-status.change.history.html#5539b007-5534-454c-8363-2ee0a1248a81">CodeSystem-dk-marital-status.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-marital-status.html#9a9e9311-33ce-4f14-b889-8a282c0905f6">CodeSystem-dk-marital-status.html#/html/body/div/div/div/p/a at Line 204, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-marital-status.json.html#ed8972e8-4dde-4be5-82c1-f730ab48d018">CodeSystem-dk-marital-status.json.html#/html/body/div/div/div/p/a at Line 222, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-marital-status.ttl.html#2b280c27-c81a-43b9-b30b-1003ad60ecec">CodeSystem-dk-marital-status.ttl.html#/html/body/div/div/div/p/a at Line 231, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="CodeSystem-dk-marital-status.xml.html#6ecefa38-1cd3-4f4a-879c-9ddcde26c60f">CodeSystem-dk-marital-status.xml.html#/html/body/div/div/div/p/a at Line 216, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-cpr.change.history.html#2311c711-e871-4498-88d8-13166659b6a9">NamingSystem-cpr.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-cpr.html#03aa79e0-0855-410f-8fb7-32d02f4047ff">NamingSystem-cpr.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-cpr.json.html#b977399e-1f4f-46d7-a1ba-65fe58bf8d0b">NamingSystem-cpr.json.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-cpr.ttl.html#dbefd059-e694-4670-b52c-337696712ca7">NamingSystem-cpr.ttl.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-cpr.xml.html#c97671b3-d25e-4f64-a554-3aa5f944c549">NamingSystem-cpr.xml.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-sor.change.history.html#efd74f99-ba19-4349-9ff5-139f9ddd285a">NamingSystem-sor.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-sor.html#d161d9f8-e844-446f-92aa-f43db7a6d4b8">NamingSystem-sor.html#/html/body/div/div/div/p/a at Line 185, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-sor.json.html#5b03f52c-269c-43cb-9f72-0abf87126428">NamingSystem-sor.json.html#/html/body/div/div/div/p/a at Line 232, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-sor.ttl.html#f217ebdb-de83-4c6c-907b-8b0595ee241b">NamingSystem-sor.ttl.html#/html/body/div/div/div/p/a at Line 242, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="NamingSystem-sor.xml.html#2f76733e-8569-4d46-8b2a-4ccafa9f0804">NamingSystem-sor.xml.html#/html/body/div/div/div/p/a at Line 230, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-283.change.history.html#be1c302d-d62e-4615-9c4e-3313f7967190">Patient-283.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-283.html#d6b81a99-67d4-45ed-95a3-b1a1fc320e13">Patient-283.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-283.json.html#f1c0f641-f105-486d-b901-b0350fb20152">Patient-283.json.html#/html/body/div/div/div/p/a at Line 269, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-283.ttl.html#beb53576-9bd0-4f6d-8ce2-4ced9477785f">Patient-283.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-283.xml.html#de8af08c-16d6-4f87-8b02-3f6db1c71b99">Patient-283.xml.html#/html/body/div/div/div/p/a at Line 249, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-bubber.change.history.html#e228cd87-54b4-4dc6-8369-214261f60982">Patient-bubber.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-bubber.html#f79e9597-38bf-40bf-8f5b-9603e77446b2">Patient-bubber.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-bubber.json.html#72cc8e9a-4b3a-4c2d-bbb6-f320b1a62357">Patient-bubber.json.html#/html/body/div/div/div/p/a at Line 233, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-bubber.ttl.html#01db9000-0b94-46ff-b0ae-9116e13fd6ec">Patient-bubber.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-bubber.xml.html#3310bb2f-7d8e-41cc-b8f8-b3250c58f03e">Patient-bubber.xml.html#/html/body/div/div/div/p/a at Line 219, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-mogensen.change.history.html#dfd59f3b-e643-4e50-a8b9-dcb0ed5839a0">Patient-mogensen.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-mogensen.html#71bf3af1-2eae-408c-9f6c-d59c7a0eb8e9">Patient-mogensen.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-mogensen.json.html#85dfe2a4-0449-4ff2-b169-465f5abb6f3a">Patient-mogensen.json.html#/html/body/div/div/div/p/a at Line 226, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-mogensen.ttl.html#b34b5db5-970a-4cd0-9074-567a728ebab1">Patient-mogensen.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-mogensen.xml.html#e6d23d82-4ede-42f9-8886-4ae4c096b148">Patient-mogensen.xml.html#/html/body/div/div/div/p/a at Line 214, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ukendt.change.history.html#e7c7f7e1-9a04-45fd-8fcd-fb6c577f2c32">Patient-ukendt.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ukendt.html#5f2481ba-514d-470f-bb00-4c1ffbdf558b">Patient-ukendt.html#/html/body/div/div/div/p/a at Line 182, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ukendt.json.html#f96de023-ac31-48d5-8a07-7e9338588206">Patient-ukendt.json.html#/html/body/div/div/div/p/a at Line 214, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ukendt.ttl.html#18949d7d-a1c9-4589-be57-891124ff6674">Patient-ukendt.ttl.html#/html/body/div/div/div/p/a at Line 227, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="Patient-ukendt.xml.html#9b5058c5-64d8-4af9-81f7-d7c51cdd38e6">Patient-ukendt.xml.html#/html/body/div/div/div/p/a at Line 206, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier-definitions.html#ee46c56c-b9b9-45b7-9d22-12320b00aaea">StructureDefinition-AuthorizationIdentifier-definitions.html#/html/body/div/div/div/p/a at Line 323, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier-examples.html#e9655767-beb0-4c0d-b586-aa5336033ef4">StructureDefinition-AuthorizationIdentifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier-mappings.html#f788889b-7284-4802-929c-e360fb29f417">StructureDefinition-AuthorizationIdentifier-mappings.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier.html#5d610869-c27a-4450-a8c7-3c17d9e91d63">StructureDefinition-AuthorizationIdentifier.html#/html/body/div/div/div/p/a at Line 502, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier.profile.history.html#9b41f5d0-97b6-4986-8cd8-b9f1e80c068d">StructureDefinition-AuthorizationIdentifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier.profile.json.html#e6ab0fd8-fbc9-4298-8c79-d5a1d8e8625a">StructureDefinition-AuthorizationIdentifier.profile.json.html#/html/body/div/div/div/p/a at Line 766, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier.profile.ttl.html#e7719674-a82a-4052-92a4-dea2ef7e472a">StructureDefinition-AuthorizationIdentifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 705, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-AuthorizationIdentifier.profile.xml.html#9571cc65-f867-4dd0-bab3-e9a40efd551a">StructureDefinition-AuthorizationIdentifier.profile.xml.html#/html/body/div/div/div/p/a at Line 711, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes-definitions.html#2f55b33e-47ae-47c1-979f-d14188d8d00b">StructureDefinition-dk-core-RegionalSubDivisionCodes-definitions.html#/html/body/div/div/div/p/a at Line 304, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes-mappings.html#4afab32d-82de-4538-a058-cfa739db2737">StructureDefinition-dk-core-RegionalSubDivisionCodes-mappings.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.html#8143fbf7-e86f-4328-a39f-7ebc484f4258">StructureDefinition-dk-core-RegionalSubDivisionCodes.html#/html/body/div/div/div/p/a at Line 491, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.history.html#4e852023-2e34-482d-a86c-0c3672a00d4a">StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.json.html#f492b5ef-e16d-4f55-bb7c-6a5083828fa7">StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.json.html#/html/body/div/div/div/p/a at Line 699, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.ttl.html#7f2b2a3a-03ba-4c2a-9991-13eef0915277">StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.ttl.html#/html/body/div/div/div/p/a at Line 645, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.xml.html#f24fc694-ff17-4eba-9d3d-faec72c3a2b5">StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.xml.html#/html/body/div/div/div/p/a at Line 637, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier-definitions.html#342fb6bb-99ff-4d54-9bf7-88024e1ea235">StructureDefinition-dk-core-cpr-identifier-definitions.html#/html/body/div/div/div/p/a at Line 430, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier-examples.html#e0da3450-ad7a-4376-b049-826b2e836196">StructureDefinition-dk-core-cpr-identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier-mappings.html#5b5dfaed-1bb2-4adc-8bcf-f7d0d14a1181">StructureDefinition-dk-core-cpr-identifier-mappings.html#/html/body/div/div/div/p/a at Line 276, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier.html#37d4db4a-690e-4b5d-95f1-34bf53e5247f">StructureDefinition-dk-core-cpr-identifier.html#/html/body/div/div/div/p/a at Line 576, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier.profile.history.html#a9e6173c-223f-4f60-ae17-a5f0e7c7b27c">StructureDefinition-dk-core-cpr-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier.profile.json.html#b2b4923c-d89a-4274-92e6-6d51379b03e1">StructureDefinition-dk-core-cpr-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 1315, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier.profile.ttl.html#c5bc3120-b2cb-44e4-9350-ffef4f90ccec">StructureDefinition-dk-core-cpr-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 1163, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-cpr-identifier.profile.xml.html#4705e22d-a1c7-44d4-aa99-524f56c718e7">StructureDefinition-dk-core-cpr-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 1199, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes-definitions.html#6a1bb379-7af5-4c46-bfd1-696a5d374701">StructureDefinition-dk-core-municipalityCodes-definitions.html#/html/body/div/div/div/p/a at Line 304, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes-mappings.html#3f1932b9-716e-4c43-9ebe-a1a5095594d8">StructureDefinition-dk-core-municipalityCodes-mappings.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes.html#3133f801-5da4-424d-b201-0f451fe64464">StructureDefinition-dk-core-municipalityCodes.html#/html/body/div/div/div/p/a at Line 491, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes.profile.history.html#316002db-e69c-4f6f-9268-5f245e2253a6">StructureDefinition-dk-core-municipalityCodes.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes.profile.json.html#139d6bcb-0aa0-4e17-8dfe-0e894c6281e3">StructureDefinition-dk-core-municipalityCodes.profile.json.html#/html/body/div/div/div/p/a at Line 699, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes.profile.ttl.html#db13365a-fdc4-4a77-8a53-989730b144a7">StructureDefinition-dk-core-municipalityCodes.profile.ttl.html#/html/body/div/div/div/p/a at Line 645, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-municipalityCodes.profile.xml.html#938c350f-2d28-490b-bfc3-1fb8dc6efe66">StructureDefinition-dk-core-municipalityCodes.profile.xml.html#/html/body/div/div/div/p/a at Line 637, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient-definitions.html#d5f03182-d28f-4b62-bede-ccdcf3d22f1c">StructureDefinition-dk-core-patient-definitions.html#/html/body/div/div/div/p/a at Line 1054, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient-examples.html#ad26f360-3d85-4346-9001-1f3bc9045807">StructureDefinition-dk-core-patient-examples.html#/html/body/div/div/div/p/a at Line 268, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient-mappings.html#e93ac4ff-29f3-40b6-8bc2-686baf4ccf54">StructureDefinition-dk-core-patient-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient.html#574af0d7-38c6-49a6-aff0-58d062df81e9">StructureDefinition-dk-core-patient.html#/html/body/div/div/div/p/a at Line 1081, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient.profile.history.html#36aa47bb-15b4-4154-ba42-743c162b814e">StructureDefinition-dk-core-patient.profile.history.html#/html/body/div/div/div/p/a at Line 228, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient.profile.json.html#e537e9b4-f342-462e-8914-724dd806eaea">StructureDefinition-dk-core-patient.profile.json.html#/html/body/div/div/div/p/a at Line 4239, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient.profile.ttl.html#8c60276d-e301-4d0b-81bb-7bfc2460c88d">StructureDefinition-dk-core-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 3667, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-patient.profile.xml.html#1d3a7b5b-a510-4361-b805-6d5681043689">StructureDefinition-dk-core-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 3811, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier-definitions.html#199ffd69-aeb7-46f5-8185-967f098a4fcb">StructureDefinition-dk-core-sor-identifier-definitions.html#/html/body/div/div/div/p/a at Line 323, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier-examples.html#f3fc676d-dba4-4913-bd94-5f9c5041317d">StructureDefinition-dk-core-sor-identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier-mappings.html#6f36bc00-826e-4772-9ff3-2308c25b9e5c">StructureDefinition-dk-core-sor-identifier-mappings.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier.html#fe3cdf19-f961-4c2b-8a33-dd110a0193bf">StructureDefinition-dk-core-sor-identifier.html#/html/body/div/div/div/p/a at Line 504, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier.profile.history.html#2ce0065e-8b33-4b25-b1b3-0d8cd049da7c">StructureDefinition-dk-core-sor-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier.profile.json.html#04d407b0-681f-4810-8e2c-e69fc888a2c5">StructureDefinition-dk-core-sor-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 771, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier.profile.ttl.html#4339dec5-deac-481e-967d-3a9fa393705b">StructureDefinition-dk-core-sor-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 709, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-dk-core-sor-identifier.profile.xml.html#0202e135-15ce-4f5d-9bec-e88ecbac581f">StructureDefinition-dk-core-sor-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 713, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier-definitions.html#8caab241-ec13-470d-bb26-47dd4ee23e52">StructureDefinition-lpr3-Identifier-definitions.html#/html/body/div/div/div/p/a at Line 322, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier-examples.html#715f3625-e0b9-4d93-a617-f45e51c01262">StructureDefinition-lpr3-Identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier-mappings.html#0f714ba5-eae0-4486-b322-0eb2b29f1eb5">StructureDefinition-lpr3-Identifier-mappings.html#/html/body/div/div/div/p/a at Line 258, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier.html#c43fe5b1-eada-423f-baab-a2844e833f6b">StructureDefinition-lpr3-Identifier.html#/html/body/div/div/div/p/a at Line 502, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier.profile.history.html#c872dfed-57dd-4699-b650-1b98bb60721e">StructureDefinition-lpr3-Identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier.profile.json.html#e7bb2dc6-a036-4026-b068-3cbf70efb2ee">StructureDefinition-lpr3-Identifier.profile.json.html#/html/body/div/div/div/p/a at Line 765, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier.profile.ttl.html#de344921-a0c1-433a-8a5d-d66f8bba8cf7">StructureDefinition-lpr3-Identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 704, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-lpr3-Identifier.profile.xml.html#a253f2bf-65c7-4c4b-a3f3-e9d3ded900ec">StructureDefinition-lpr3-Identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 707, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-MunicipalityCodes.change.history.html#b16a3166-b79f-46ed-a6f4-84f1f2a9da98">ValueSet-dk-core-MunicipalityCodes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-MunicipalityCodes.html#231e89df-9680-4513-8f0e-0cd391605b1e">ValueSet-dk-core-MunicipalityCodes.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-MunicipalityCodes.json.html#f0b98f3e-2f07-4216-85ac-be3d63849078">ValueSet-dk-core-MunicipalityCodes.json.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-MunicipalityCodes.ttl.html#bc2c827b-caf5-40e2-b997-93d4814d21eb">ValueSet-dk-core-MunicipalityCodes.ttl.html#/html/body/div/div/div/p/a at Line 221, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-MunicipalityCodes.xml.html#410ee741-e523-41a7-9fd4-0cf453e6ada9">ValueSet-dk-core-MunicipalityCodes.xml.html#/html/body/div/div/div/p/a at Line 210, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-RegionalSubDivisionCodes.change.history.html#e1c0ca66-1054-4eb9-b439-d3850c0a9178">ValueSet-dk-core-RegionalSubDivisionCodes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-RegionalSubDivisionCodes.html#e2b11e00-60fc-4783-819e-0b4a98e89d04">ValueSet-dk-core-RegionalSubDivisionCodes.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-RegionalSubDivisionCodes.json.html#8f3439cd-7f70-4b77-9884-e73b00a306fd">ValueSet-dk-core-RegionalSubDivisionCodes.json.html#/html/body/div/div/div/p/a at Line 217, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-RegionalSubDivisionCodes.ttl.html#b1806582-f2f6-44de-bd78-519deb93aee4">ValueSet-dk-core-RegionalSubDivisionCodes.ttl.html#/html/body/div/div/div/p/a at Line 226, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-RegionalSubDivisionCodes.xml.html#6f451814-8ce8-420d-9f4d-6ec7730c423d">ValueSet-dk-core-RegionalSubDivisionCodes.xml.html#/html/body/div/div/div/p/a at Line 212, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-cpr-identifier-system.change.history.html#203fbc43-ea22-4b2a-993e-8a8447a4e4ed">ValueSet-dk-core-cpr-identifier-system.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-cpr-identifier-system.html#e8f6a8ba-1759-43f3-9931-38edd28d3b46">ValueSet-dk-core-cpr-identifier-system.html#/html/body/div/div/div/p/a at Line 244, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-cpr-identifier-system.json.html#b47e66c9-d00c-4e68-957c-1aeea5ebb65f">ValueSet-dk-core-cpr-identifier-system.json.html#/html/body/div/div/div/p/a at Line 213, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-cpr-identifier-system.ttl.html#7446657f-ac94-4f9c-9792-370e73a768a2">ValueSet-dk-core-cpr-identifier-system.ttl.html#/html/body/div/div/div/p/a at Line 223, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-core-cpr-identifier-system.xml.html#0e4712d4-47a7-425f-b2d7-e44ca99646e8">ValueSet-dk-core-cpr-identifier-system.xml.html#/html/body/div/div/div/p/a at Line 211, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-marital-status.change.history.html#ae215500-fb9c-4d5d-a945-3e5e634451d0">ValueSet-dk-marital-status.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-marital-status.html#a29240c6-50dc-4882-aa12-7591a33a397c">ValueSet-dk-marital-status.html#/html/body/div/div/div/p/a at Line 245, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-marital-status.json.html#993461a8-49bc-4b59-b142-d41276cb941a">ValueSet-dk-marital-status.json.html#/html/body/div/div/div/p/a at Line 234, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-marital-status.ttl.html#35398b56-1fdf-4881-a589-8f2bf0d5d355">ValueSet-dk-marital-status.ttl.html#/html/body/div/div/div/p/a at Line 239, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="ValueSet-dk-marital-status.xml.html#43cc58fc-822e-4d26-b402-09a3ec697522">ValueSet-dk-marital-status.xml.html#/html/body/div/div/div/p/a at Line 225, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#b2a8b8c7-b789-433d-a754-776eca9cb378">artifacts.html#/html/body/div/div/div/p/a at Line 443, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#48c2457c-71ca-4d4e-93bd-7f35de1bb83e">downloads.html#/html/body/div/div/div/p/a at Line 176, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="extensions.html#1a18e2b1-0ea9-468e-8ae3-c9c2c240858a">extensions.html#/html/body/div/div/div/p/a at Line 140, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="guidance.html#7bbd7baa-d35f-477f-b4f0-7d04541a3bc5">guidance.html#/html/body/div/div/div/p/a at Line 163, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#2f4e1403-95d6-49b9-8547-e6a345b82e8c">index.html#/html/body/div/div/div/p/a at Line 191, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="profiles.html#39427d14-1d06-49fd-ae52-32d30d65d33c">profiles.html#/html/body/div/div/div/p/a at Line 155, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="terminology.html#a0596bbe-3c5a-4920-b0c4-ed3c7108217c">terminology.html#/html/body/div/div/div/p/a at Line 166, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#42a7a0f9-23a9-43ed-9ef6-4000dd779cbd">toc.html#/html/body/div/div/div/p/a at Line 133, column 28</a></b></td><td><b>error</b></td><td><b>The link '' for &quot;&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-administrative-gender-supplement"> </a>
+<h2><a href="CodeSystem-administrative-gender-supplement.html">/github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/administrative-gender-supplement: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/administrative-gender-supplement: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-dk-core-cpr-identifier-system"> </a>
+<h2><a href="CodeSystem-dk-core-cpr-identifier-system.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/dk-core-cpr-identifier-system: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-dk-core-municipality-codes"> </a>
+<h2><a href="CodeSystem-dk-core-municipality-codes.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/dk-core-municipality-codes: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-dk-core-municipality-codes-greenland"> </a>
+<h2><a href="CodeSystem-dk-core-municipality-codes-greenland.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes-greenland.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/dk-core-municipality-codes-greenland: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-dk-core-regional-subdivision-codes"> </a>
+<h2><a href="CodeSystem-dk-core-regional-subdivision-codes.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-core-regional-subdivision-codes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/dk-core-regional-subdivision-codes: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem/dk-core-regional-subdivision-codes: CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-dk-marital-status"> </a>
+<h2><a href="CodeSystem-dk-marital-status.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/dk-marital-status: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem/dk-marital-status: CodeSystem</b></td><td><b>warning</b></td><td title="csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem/dk-marital-status: CodeSystem.concept[0].designation[0].language</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem/dk-marital-status: CodeSystem.concept[1].designation[0].language</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-dk.fhir.ig.dk-core"> </a>
+<h2><a href="ImplementationGuide-dk.fhir.ig.dk-core.html">/github/workspace/fsh-generated/resources/ImplementationGuide-dk.fhir.ig.dk-core.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/dk.fhir.ig.dk-core: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-cpr"> </a>
+<h2><a href="NamingSystem-cpr.html">/github/workspace/fsh-generated/resources/NamingSystem-cpr.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>NamingSystem/cpr: NamingSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>NamingSystem/cpr: NamingSystem.type.coding[0]</b></td><td><b>error</b></td><td title="Terminology_PassThrough_TX_Message"><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNDNK in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNDNK'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_NamingSystem-sor"> </a>
+<h2><a href="NamingSystem-sor.html">/github/workspace/fsh-generated/resources/NamingSystem-sor.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>NamingSystem/sor: NamingSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>NamingSystem/sor: NamingSystem</b></td><td><b>warning</b></td><td title="nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>nsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-283"> </a>
+<h2><a href="Patient-283.html">/github/workspace/fsh-generated/resources/Patient-283.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/283: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Patient/283: Patient.generalPractitioner[0] (l73/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b> <span id="sl166" class="flip" onclick="flip('l166')">Show Reasoning</span><div id="l166" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.dk/fhir/core/StructureDefinition/dk-core-patient<ul><li>Patient.generalPractitioner[0]: discriminator = true and ('urn:oid:1.2.208.176.1.1' in identifier.system)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-bubber"> </a>
+<h2><a href="Patient-bubber.html">/github/workspace/fsh-generated/resources/Patient-bubber.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/bubber: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Patient/bubber: Patient.name[1] (l21/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b> <span id="sl168" class="flip" onclick="flip('l168')">Show Reasoning</span><div id="l168" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.dk/fhir/core/StructureDefinition/dk-core-patient<ul><li>Patient.name[1]: discriminator = true and ('official' in use)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-mogensen"> </a>
+<h2><a href="Patient-mogensen.html">/github/workspace/fsh-generated/resources/Patient-mogensen.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/mogensen: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient/mogensen: Patient.maritalStatus (l22/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://hl7.dk/fhir/core/ValueSet/dk-marital-status because the value set or code system is not known to the validator]"><b>[Unable to determine whether the provided codes are in the value set http://hl7.dk/fhir/core/ValueSet/dk-marital-status because the value set or code system is not known to the validator]</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient/mogensen: Patient.maritalStatus.coding[0] (l23/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://hl7.dk/fhir/CodeSystem/dk-marital-status' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Patient-ukendt"> </a>
+<h2><a href="Patient-ukendt.html">/github/workspace/fsh-generated/resources/Patient-ukendt.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/ukendt: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Patient/ukendt: Patient.identifier[0] (l19/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b> <span id="sl173" class="flip" onclick="flip('l173')">Show Reasoning</span><div id="l173" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.dk/fhir/core/StructureDefinition/dk-core-patient<ul><li>Patient.identifier[0]: discriminator = true and (system memberOf 'http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Patient/ukendt: Patient.name[0] (l10/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient</b> <span id="sl174" class="flip" onclick="flip('l174')">Show Reasoning</span><div id="l174" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://hl7.dk/fhir/core/StructureDefinition/dk-core-patient<ul><li>Patient.name[0]: discriminator = true and ('official' in use)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-AuthorizationIdentifier"> </a>
+<h2><a href="StructureDefinition-AuthorizationIdentifier.html">/github/workspace/fsh-generated/resources/StructureDefinition-AuthorizationIdentifier.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/AuthorizationIdentifier: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/AuthorizationIdentifier')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-RegionalSubDivisionCodes"> </a>
+<h2><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/dk-core-RegionalSubDivisionCodes: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/dk-core-RegionalSubDivisionCodes: StructureDefinition.snapshot.element[3].fixed.ofType(uri)</b></td><td><b>error</b></td><td title="SD_VALUE_TYPE_IILEGAL"><b>The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-cpr-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-cpr-identifier.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/dk-core-cpr-identifier: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-municipalityCodes"> </a>
+<h2><a href="StructureDefinition-dk-core-municipalityCodes.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/dk-core-municipalityCodes: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/dk-core-municipalityCodes: StructureDefinition.snapshot.element[3].fixed.ofType(uri)</b></td><td><b>error</b></td><td title="SD_VALUE_TYPE_IILEGAL"><b>The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-patient"> </a>
+<h2><a href="StructureDefinition-dk-core-patient.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/dk-core-patient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-dk-core-sor-identifier"> </a>
+<h2><a href="StructureDefinition-dk-core-sor-identifier.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/dk-core-sor-identifier: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-lpr3-Identifier"> </a>
+<h2><a href="StructureDefinition-lpr3-Identifier.html">/github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/lpr3-Identifier: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-dk-core-MunicipalityCodes"> </a>
+<h2><a href="ValueSet-dk-core-MunicipalityCodes.html">/github/workspace/fsh-generated/resources/ValueSet-dk-core-MunicipalityCodes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/dk-core-MunicipalityCodes: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-dk-core-RegionalSubDivisionCodes"> </a>
+<h2><a href="ValueSet-dk-core-RegionalSubDivisionCodes.html">/github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/dk-core-RegionalSubDivisionCodes: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet/dk-core-RegionalSubDivisionCodes: ValueSet.jurisdiction[0].coding[0]</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'urn:iso:std:iso:3166-2:DK-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-dk-core-cpr-identifier-system"> </a>
+<h2><a href="ValueSet-dk-core-cpr-identifier-system.html">/github/workspace/fsh-generated/resources/ValueSet-dk-core-cpr-identifier-system.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/dk-core-cpr-identifier-system: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/dk-core-cpr-identifier-system: ValueSet</b></td><td><b>warning</b></td><td title="vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-dk-marital-status"> </a>
+<h2><a href="ValueSet-dk-marital-status.html">/github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/dk-marital-status: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/dk-marital-status: ValueSet</b></td><td><b>warning</b></td><td title="vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet/dk-marital-status: ValueSet.compose.include[1].concept[0].designation[0].language</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet/dk-marital-status: ValueSet.compose.include[1].concept[1].designation[0].language</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/dk-marital-status: ValueSet.compose[0].include[1]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'dk-marital-status')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.dk/fhir/CodeSystem/dk-marital-status</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="SD_VALUE_TYPE_IILEGAL"> </a>
+<h2>SD_VALUE_TYPE_IILEGAL</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-dk-core-RegionalSubDivisionCodes.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json</a></td><td><b>The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-dk-core-municipalityCodes.html">/github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json</a></td><td><b>The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_PassThrough_TX_Message"> </a>
+<h2>Terminology_PassThrough_TX_Message</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="NamingSystem-cpr.html">/github/workspace/fsh-generated/resources/NamingSystem-cpr.json</a></td><td><b>Unknown Code http://terminology.hl7.org/CodeSystem/v2-0203#NNDNK in http://terminology.hl7.org/CodeSystem/v2-0203 for 'http://terminology.hl7.org/CodeSystem/v2-0203#NNDNK'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_18"> </a>
+<h2>Terminology_TX_NoValid_18</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-dk-marital-status.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status.json</a></td><td><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-dk-marital-status.html">/github/workspace/fsh-generated/resources/CodeSystem-dk-marital-status.json</a></td><td><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-dk-marital-status.html">/github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json</a></td><td><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-dk-marital-status.html">/github/workspace/fsh-generated/resources/ValueSet-dk-marital-status.json</a></td><td><b>The value provided ('da-DK') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages), and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#da-DK) is not valid in the value set 'CommonLanguages' (from http://tx.fhir.org/r4))</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Patient-mogensen.html">/github/workspace/fsh-generated/resources/Patient-mogensen.json</a></td><td><b>Code System URI 'http://hl7.dk/fhir/CodeSystem/dk-marital-status' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-dk-core-RegionalSubDivisionCodes.html">/github/workspace/fsh-generated/resources/ValueSet-dk-core-RegionalSubDivisionCodes.json</a></td><td><b>Code System URI 'urn:iso:std:iso:3166-2:DK-2' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+</body>
+</html>

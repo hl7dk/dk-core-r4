@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="mogensen"/>
+  <meta>
+    <profile value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 1112640001</p><p><b>name</b>: Jan Mogensen (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1964-12-11</p><p><b>maritalStatus</b>: <span title="Codes: {http://hl7.dk/fhir/CodeSystem/dk-marital-status P}">Registreret partnerskab</span></p></div>
+  </text>
+  <identifier>
+    <system value="urn:oid:1.2.208.176.1.2"/>
+    <value value="1112640001"/>
+  </identifier>
+  <name>
+    <use value="official"/>
+    <family value="Mogensen"/>
+    <given value="Jan"/>
+    <prefix value="Mr"/>
+  </name>
+  <gender value="male"/>
+  <birthDate value="1964-12-11"/>
+  <maritalStatus>
+    <coding>
+      <system value="http://hl7.dk/fhir/CodeSystem/dk-marital-status"/>
+      <code value="P"/>
+      <display value="Registreret partnerskab"/>
+    </coding>
+  </maritalStatus>
+</Patient>

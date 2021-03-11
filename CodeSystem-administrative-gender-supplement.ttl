@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "administrative-gender-supplement"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/StructureDefinition/shareablecodesystem";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p/><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">male<a name=\"administrative-gender-supplement-male\"> </a></td></tr><tr><td style=\"white-space:nowrap\">female<a name=\"administrative-gender-supplement-female\"> </a></td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"administrative-gender-supplement-other\"> </a></td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"administrative-gender-supplement-unknown\"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>male</td><td>Mand</td></tr><tr><td>female</td><td>Kvinde</td></tr><tr><td>other</td><td>Andet</td></tr><tr><td>unknown</td><td>Ukendt</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "AdministrativeGenderDkSupplement"];
+  fhir:CodeSystem.status [ fhir:value "draft"];
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:CodeSystem.date [ fhir:value "2020-07-27"^^xsd:date];
+  fhir:CodeSystem.publisher [ fhir:value "ehealth.sundhed.dk"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://hl7.dk/fhir/" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem supplement with danish translations for administrative gender"];
+  fhir:CodeSystem.content [ fhir:value "supplement"];
+  fhir:CodeSystem.supplements [
+     fhir:value "http://hl7.org/fhir/administrative-gender";
+     fhir:link <http://hl7.org/fhir/administrative-gender>
+  ];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "male" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Mand" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "female" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Kvinde" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "other" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Andet" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "unknown" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "da" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Ukendt" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

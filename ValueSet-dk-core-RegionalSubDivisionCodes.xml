@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="dk-core-RegionalSubDivisionCodes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-dk-core-regional-subdivision-codes.html"><code>http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
+  <version value="0.1.0"/>
+  <name value="RegionalSubdivisionCodes"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2019-02-02"/>
+  <publisher value="ehealth.sundhed.dk"/>
+  <description value="Subdivision codes (Regional codes) used in Denmark"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166-2:DK-2"/>
+      <code value="ISO"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,12 @@
+{
+  "url": "http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core",
+  "name": "DK_Core",
+  "package-id": "dk.fhir.ig.dk-core",
+  "ig-ver": "0.1.0",
+  "date": "Thu, 11 Mar, 2021 19:56:45 +0000",
+  "errs": 4,
+  "warnings": 16,
+  "hints": 10,
+  "version": "4.0.1",
+  "tool": "4.5.0 (3)"
+}

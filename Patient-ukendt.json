@@ -1,0 +1,30 @@
+{
+  "resourceType": "Patient",
+  "id": "ukendt",
+  "meta": {
+    "profile": [
+      "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 0706830VJ9</p><p><b>name</b>: Anders Ukendt (TEMP)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1983-06-07</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://rn.dk",
+      "value": "0706830VJ9"
+    }
+  ],
+  "name": [
+    {
+      "use": "temp",
+      "family": "Ukendt",
+      "given": [
+        "Anders"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1983-06-07"
+}
