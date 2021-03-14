@@ -6,7 +6,7 @@ id: dk.fhir.ig.dk-core
 canonical: http://hl7.dk/fhir/core
 name: DK_Core
 status: draft
-version: 0.1.0
+version: 0.9.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
 releaseLabel: ci-build
