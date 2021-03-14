@@ -80,10 +80,10 @@ Title: "Danish Core Patient Profile"
 //* address.extension ^slicing.discriminator[0].type = #value
 //* address.extension ^slicing.discriminator[0].path = "url"
 //* address.extension ^slicing.rules = #open
-* address.extension contains MunicipalityCodes named municipalityCode ..1 and RegionalSubDivisionCodes named regionalSubDivisionCodes ..1
-* address.extension[municipalityCode] only MunicipalityCodes
+* address.extension contains MunicipalityCodesExtension named municipalityCode ..1 and RegionalSubDivisionCodesExtension named regionalSubDivisionCodes ..1
+* address.extension[municipalityCode] only MunicipalityCodesExtension
 * address.extension[municipalityCode] ^sliceName = "municipalityCode"
-* address.extension[regionalSubDivisionCodes] only RegionalSubDivisionCodes
+* address.extension[regionalSubDivisionCodes] only RegionalSubDivisionCodesExtension
 * address.extension[regionalSubDivisionCodes] ^sliceName = "regionalSubDivisionCodes"
 * maritalStatus from $dk-marital-status_1 (extensible)
 * generalPractitioner ^slicing.discriminator[0].type = #value

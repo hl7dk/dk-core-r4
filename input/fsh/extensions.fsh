@@ -1,4 +1,4 @@
-Extension: MunicipalityCodes
+Extension: MunicipalityCodesExtension
 Id: dk-core-municipalityCodes
 Title: "Danish Core Municipality codes"
 //* ^status = #draft
@@ -9,7 +9,7 @@ Title: "Danish Core Municipality codes"
 * value[x] only CodeableConcept
 * value[x].coding from MunicipalityCodes (required)
 
-Extension: RegionalSubDivisionCodes
+Extension: RegionalSubDivisionCodesExtension
 Id: dk-core-RegionalSubDivisionCodes
 Title: "Danish Core Regional Sub Division Codes Extension"
 //* ^status = #draft
