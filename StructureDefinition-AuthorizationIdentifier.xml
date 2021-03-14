@@ -12,7 +12,7 @@
   <version value="0.1.0"/>
   <name value="AuthorizationIdentifier"/>
   <status value="draft"/>
-  <date value="2021-03-11T19:56:45+00:00"/>
+  <date value="2021-03-14T15:55:39+00:00"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

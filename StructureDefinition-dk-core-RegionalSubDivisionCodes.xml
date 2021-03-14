@@ -12,10 +12,10 @@
   </text>
   <url value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"/>
   <version value="0.1.0"/>
-  <name value="RegionalSubDivisionCodes"/>
+  <name value="RegionalSubDivisionCodesExtension"/>
   <title value="Danish Core Regional Sub Division Codes Extension"/>
   <status value="active"/>
-  <date value="2021-03-11T19:56:45+00:00"/>
+  <date value="2021-03-14T15:55:39+00:00"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

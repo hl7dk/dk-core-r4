@@ -7,10 +7,10 @@
   },
   "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes",
   "version": "0.1.0",
-  "name": "RegionalSubDivisionCodes",
+  "name": "RegionalSubDivisionCodesExtension",
   "title": "Danish Core Regional Sub Division Codes Extension",
   "status": "active",
-  "date": "2021-03-11T19:56:45+00:00",
+  "date": "2021-03-14T15:55:39+00:00",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

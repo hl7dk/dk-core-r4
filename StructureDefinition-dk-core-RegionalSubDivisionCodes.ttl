@@ -14,10 +14,10 @@
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
-  fhir:StructureDefinition.name [ fhir:value "RegionalSubDivisionCodes"];
+  fhir:StructureDefinition.name [ fhir:value "RegionalSubDivisionCodesExtension"];
   fhir:StructureDefinition.title [ fhir:value "Danish Core Regional Sub Division Codes Extension"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-11T19:56:45+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-14T15:55:39+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
