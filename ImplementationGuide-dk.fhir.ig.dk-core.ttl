@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "DK_Core"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-14T15:55:39+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-14T16:13:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "dk.fhir.ig.dk-core"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [
@@ -261,8 +261,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/AuthorizationIdentifier>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/AuthorizationIdentifier" ]
+         fhir:link <http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/dk-core-authorization-identifier" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "AuthorizationIdentifier" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
@@ -530,7 +530,7 @@
          fhir:link <http://hl7.dk/fhir/core/ValueSet/dk-marital-status>;
          fhir:Reference.reference [ fhir:value "ValueSet/dk-marital-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "dk-marital-status-of-ValueSet" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DK MaritalStatus" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

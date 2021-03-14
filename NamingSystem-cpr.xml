@@ -4,13 +4,20 @@
   <id value="cpr"/>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://hl7.dk/fhir/core/NamingSystem/cpr</td></tr><tr><td>Version</td><td>0.1.0</td></tr><tr><td>Name</td><td>DanishCivilRegistrationSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>The Danish civil registration system (&quot;CPR&quot;) encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets TillægsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark.</p>
-</div></td></tr><tr><td>Publisher</td><td>Sundhedsdatastyrelsen?</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>OID</td><td>1.2.208.176.1.2</td></tr><tr><td>URI</td><td>http://www.cpr.dk/cpr-systemet</td></tr></table></div>
+</div></td></tr><tr><td>Publisher</td><td>HL7 Denmark</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td></tr><tr><td>OID</td><td>1.2.208.176.1.2</td></tr><tr><td>URI</td><td>http://www.cpr.dk/cpr-systemet</td></tr></table></div>
   </text>
   <name value="DanishCivilRegistrationSystem"/>
   <status value="active"/>
   <kind value="identifier"/>
   <date value="1968-04-02"/>
-  <publisher value="Sundhedsdatastyrelsen?"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.dk/"/>
+    </telecom>
+  </contact>
   <responsible value="CPR-kontoret, &#xD8;konomi- og Indenrigsministeriets departement"/>
   <type>
     <coding>
@@ -20,6 +27,12 @@
     </coding>
   </type>
   <description value="The Danish civil registration system (&quot;CPR&quot;) encompasses basic personal data about anyone with a civil registration number. A civil registration number shall be allocated to anyone who: 1) is registered in the national register in Denmark on the grounds of birth or relocation from abroad; 2) is included under Arbejdsmarkedets Till&#xE6;gsPension (ATP); 3) according to the tax authorities, is required to have a civil registration number for the purpose of tax processing in Denmark."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
   <uniqueId>
     <type value="oid"/>
     <value value="1.2.208.176.1.2"/>

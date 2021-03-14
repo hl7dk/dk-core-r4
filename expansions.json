@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "df7612d9-d49f-44d0-abdb-0802d0950c45",
+  "id" : "a31afc59-fa9a-4ad6-b2bd-6ce154c88c6c",
   "meta" : {
-    "lastUpdated" : "2021-03-14T15:55:39.126+00:00"
+    "lastUpdated" : "2021-03-14T16:13:33.231+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -21,10 +21,25 @@
       "status" : "active",
       "experimental" : false,
       "date" : "2019-11-01T09:29:23+11:00",
+      "publisher" : "HL7 Denmark",
+      "contact" : [{
+        "name" : "HL7 Denmark",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.dk/"
+        }]
+      }],
       "description" : "This value set defines the set of codes that can be used to identify the danish CPR system.",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK"
+        }]
+      }],
+      "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:4cfccf5f-3c72-4461-a1f9-5922dc4eb4b9",
-        "timestamp" : "2021-03-14T15:55:48+00:00",
+        "identifier" : "urn:uuid:dcd28310-98c6-4d83-a2c1-85fa79527a0d",
+        "timestamp" : "2021-03-14T16:13:44+00:00",
         "total" : 1,
         "parameter" : [{
           "name" : "excludeNested",
@@ -57,11 +72,25 @@
       "status" : "draft",
       "experimental" : true,
       "date" : "2019-02-02T00:00:00+00:00",
-      "publisher" : "ehealth.sundhed.dk",
+      "publisher" : "HL7 Denmark",
+      "contact" : [{
+        "name" : "HL7 Denmark",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.dk/"
+        }]
+      }],
       "description" : "Municipality codes used in Denmark",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK"
+        }]
+      }],
+      "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:f58df503-77e2-4ee6-85ee-203ec766c251",
-        "timestamp" : "2021-03-14T15:55:49+00:00",
+        "identifier" : "urn:uuid:e6beeeb1-0bdf-457d-99c3-18728ac834d4",
+        "timestamp" : "2021-03-14T16:13:44+00:00",
         "total" : 104,
         "parameter" : [{
           "name" : "excludeNested",
@@ -613,17 +642,25 @@
       "status" : "draft",
       "experimental" : true,
       "date" : "2019-02-02",
-      "publisher" : "ehealth.sundhed.dk",
+      "publisher" : "HL7 Denmark",
+      "contact" : [{
+        "name" : "HL7 Denmark",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.hl7.dk/"
+        }]
+      }],
       "description" : "Subdivision codes (Regional codes) used in Denmark",
       "jurisdiction" : [{
         "coding" : [{
-          "system" : "urn:iso:std:iso:3166-2:DK-2",
-          "code" : "ISO"
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "DK"
         }]
       }],
+      "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:4faa315c-836f-4fca-b331-92fa4195bfbe",
-        "timestamp" : "2021-03-14T15:55:49+00:00",
+        "identifier" : "urn:uuid:0461c280-c9ba-483d-98ae-51a37bff43a7",
+        "timestamp" : "2021-03-14T16:13:44+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",

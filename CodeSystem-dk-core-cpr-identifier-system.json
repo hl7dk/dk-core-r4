@@ -11,8 +11,30 @@
   "status": "active",
   "experimental": false,
   "date": "2019-01-29T00:00:00+00:00",
-  "publisher": "ehealth.sundhed.dk",
+  "publisher": "HL7 Denmark",
+  "contact": [
+    {
+      "name": "HL7 Denmark",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.dk/"
+        }
+      ]
+    }
+  ],
   "description": "Official CPR CodeSystem",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
   "content": "complete",
   "count": 1,
   "concept": [

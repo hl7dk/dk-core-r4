@@ -17,8 +17,26 @@
   fhir:CodeSystem.status [ fhir:value "active"];
   fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
   fhir:CodeSystem.date [ fhir:value "2019-01-29T00:00:00+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "ehealth.sundhed.dk"];
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Denmark"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.dk/" ]
+     ]
+  ];
   fhir:CodeSystem.description [ fhir:value "DK marital statuses"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DK" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.concept [
      fhir:index 0;

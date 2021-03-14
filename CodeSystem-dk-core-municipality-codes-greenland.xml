@@ -11,8 +11,22 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2019-01-29T00:00:00+00:00"/>
-  <publisher value="ehealth.sundhed.dk"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.dk/"/>
+    </telecom>
+  </contact>
   <description value="Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <caseSensitive value="true"/>
   <content value="complete"/>
   <concept>

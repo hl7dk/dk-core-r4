@@ -11,18 +11,30 @@
   "status": "draft",
   "experimental": true,
   "date": "2019-02-02",
-  "publisher": "ehealth.sundhed.dk",
+  "publisher": "HL7 Denmark",
+  "contact": [
+    {
+      "name": "HL7 Denmark",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.dk/"
+        }
+      ]
+    }
+  ],
   "description": "Subdivision codes (Regional codes) used in Denmark",
   "jurisdiction": [
     {
       "coding": [
         {
-          "system": "urn:iso:std:iso:3166-2:DK-2",
-          "code": "ISO"
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK"
         }
       ]
     }
   ],
+  "copyright": "CC-BY-SA-4.0",
   "compose": {
     "include": [
       {

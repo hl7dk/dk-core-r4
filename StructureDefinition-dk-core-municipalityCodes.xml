@@ -12,10 +12,25 @@
   </text>
   <url value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"/>
   <version value="0.1.0"/>
-  <name value="MunicipalityCodesExtension"/>
+  <name value="MunicipalityCodes"/>
   <title value="Danish Core Municipality codes"/>
-  <status value="active"/>
-  <date value="2021-03-14T15:55:39+00:00"/>
+  <status value="draft"/>
+  <date value="2021-03-14T16:56:07+01:00"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.dk/"/>
+    </telecom>
+  </contact>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

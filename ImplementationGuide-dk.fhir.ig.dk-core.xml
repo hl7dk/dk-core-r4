@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="DK_Core"/>
   <status value="draft"/>
-  <date value="2021-03-14T15:55:39+00:00"/>
+  <date value="2021-03-14T16:13:33+00:00"/>
   <packageId value="dk.fhir.ig.dk-core"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -171,7 +171,7 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/AuthorizationIdentifier"/>
+        <reference value="StructureDefinition/dk-core-authorization-identifier"/>
       </reference>
       <name value="AuthorizationIdentifier"/>
       <exampleBoolean value="false"/>
@@ -376,7 +376,7 @@
       <reference>
         <reference value="ValueSet/dk-marital-status"/>
       </reference>
-      <name value="dk-marital-status-of-ValueSet"/>
+      <name value="DK MaritalStatus"/>
       <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>
       <exampleBoolean value="false"/>
     </resource>

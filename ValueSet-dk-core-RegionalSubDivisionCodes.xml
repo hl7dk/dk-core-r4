@@ -11,14 +11,22 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2019-02-02"/>
-  <publisher value="ehealth.sundhed.dk"/>
+  <publisher value="HL7 Denmark"/>
+  <contact>
+    <name value="HL7 Denmark"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.dk/"/>
+    </telecom>
+  </contact>
   <description value="Subdivision codes (Regional codes) used in Denmark"/>
   <jurisdiction>
     <coding>
-      <system value="urn:iso:std:iso:3166-2:DK-2"/>
-      <code value="ISO"/>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
     </coding>
   </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <compose>
     <include>
       <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>

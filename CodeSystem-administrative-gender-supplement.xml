@@ -14,14 +14,22 @@
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2020-07-27"/>
-  <publisher value="ehealth.sundhed.dk"/>
+  <publisher value="HL7 Denmark"/>
   <contact>
+    <name value="HL7 Denmark"/>
     <telecom>
       <system value="url"/>
-      <value value="http://hl7.dk/fhir/"/>
+      <value value="https://www.hl7.dk/"/>
     </telecom>
   </contact>
   <description value="CodeSystem supplement with danish translations for administrative gender"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DK"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <content value="supplement"/>
   <supplements value="http://hl7.org/fhir/administrative-gender"/>
   <concept>

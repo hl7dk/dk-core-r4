@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>DK.FHIR.IG.DK-CORE\AuthorizationIdentifier - Examples - FHIR v4.0.1</title>
+    <title>DK.FHIR.IG.DK-CORE\AuthorizationIdentifier - Mappings - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -98,7 +98,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 6" class="col-12">
+<div style="counter-reset: section 5" class="col-12">
     <!-- ReleaseHeader --><p id="publish-box">DK_Core - Local Development build (v0.1.0). See the <a href="http://hl7.dk/fhir/core/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
@@ -115,20 +115,20 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="StructureDefinition-AuthorizationIdentifier.html">Content</a>
+    <a href="StructureDefinition-dk-core-authorization-identifier.html">Content</a>
   </li>
 
 
 
   <li>
-    <a href="StructureDefinition-AuthorizationIdentifier-definitions.html">Detailed Descriptions</a>
+    <a href="StructureDefinition-dk-core-authorization-identifier-definitions.html">Detailed Descriptions</a>
   </li>
 
 
 
   
-    <li>
-      <a href="StructureDefinition-AuthorizationIdentifier-mappings.html">Mappings</a>
+    <li class="active">
+      <a href="#">Mappings</a>
     </li>
   
 
@@ -138,21 +138,21 @@
 
   
     <li>
-      <a href="StructureDefinition-AuthorizationIdentifier.profile.xml.html">XML</a>
+      <a href="StructureDefinition-dk-core-authorization-identifier.profile.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-AuthorizationIdentifier.profile.json.html">JSON</a>
+      <a href="StructureDefinition-dk-core-authorization-identifier.profile.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="StructureDefinition-AuthorizationIdentifier.profile.ttl.html">TTL</a>
+      <a href="StructureDefinition-dk-core-authorization-identifier.profile.ttl.html">TTL</a>
     </li>
   
 
@@ -160,21 +160,50 @@
 </ul>
 
 
-  <a name="root"> </a>
-  <h2 id="root">Data Type Profile: AuthorizationIdentifier - Examples</h2>
+<a name="root"> </a>
+<h2 id="root">Data Type Profile: AuthorizationIdentifier - Mappings</h2>
 
-     <!-- insert intro if present -->
-    
+<p>Mappings for the dk-core-authorization-identifier data type profile.</p>
 
-
-
-
-
-  <p><b>No examples are currently available for the  Profile.</b></p>
+    <!-- insert intro if present -->
+  
 
 
-  <!-- insert notes if present -->
 
+  <a name="v2"> </a><h3>Mappings for HL7 v2 Mapping (<a href="http://hl7.org/comparison-v2.html">http://hl7.org/v2</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>AuthorizationIdentifier</b></td></tr>
+ <tr><td>Identifier</td><td>CX / EI (occasionally, more often EI maps to a resource id or a URL)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>CX.5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;system</td><td>CX.4 / EI-2-4</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value</td><td>CX.1 / EI.1</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
+</table>
+<a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>AuthorizationIdentifier</b></td></tr>
+ <tr><td>Identifier</td><td>n/a, II - The Identifier class is a little looser than the v3 type II because it allows URIs as well as registered OIDs or GUIDs.  Also maps to Role[classCode=IDENT]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;use</td><td>Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;type</td><td>Role.code or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;system</td><td>II.root or Role.id.root</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value</td><td>II.extension or II.root if system indicates OID or GUID (Or Role.id.extension or root)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
+</table>
+<a name="servd"> </a><h3>Mappings for ServD (<a href="http://www.omg.org/spec/ServD/1.0/">http://www.omg.org/spec/ServD/1.0/</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>AuthorizationIdentifier</b></td></tr>
+ <tr><td>Identifier</td><td>Identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;system</td><td>./IdentifierType</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;value</td><td>./Value</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;period</td><td>./StartDate and ./EndDate</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;assigner</td><td>./IdentifierIssuingAuthority</td> </tr>
+</table>
+
+
+    <!-- insert notes if present -->
+  
 
 
 
@@ -221,8 +250,8 @@
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
-        <p><a name="21230b9f-07ab-4b79-b9a4-fab172c10095">​</a>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="null"></a>.  Package dk.fhir.ig.dk-core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 14, 2021 15:55+0000">2021-03-14</span>
+        <p><a name="5547bf37-f03e-42f4-9698-1dde4a435fc9">​</a>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="null"></a>.  Package dk.fhir.ig.dk-core#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Mar 14, 2021 16:13+0000">2021-03-14</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

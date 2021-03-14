@@ -9,7 +9,30 @@
   "version": "0.1.0",
   "name": "SORIdentifier",
   "status": "draft",
-  "date": "2021-03-14T15:55:39+00:00",
+  "date": "2021-03-14T16:56:07+01:00",
+  "publisher": "HL7 Denmark",
+  "contact": [
+    {
+      "name": "HL7 Denmark",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.hl7.dk/"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -374,6 +397,7 @@
           },
           {
             "key": "min-digits-sor",
+            "requirements": "SOR Identifiers are at minimum 15 digits long",
             "severity": "error",
             "human": "SOR Identifiers are at minimum 15 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf",
             "expression": "matches('^([0-9]){15,}$')",
@@ -514,16 +538,8 @@
         "min": 1,
         "constraint": [
           {
-            "key": "ele-1",
-            "requirements": "SOR Identifiers are at minimum 15 digits long",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value or children",
-            "expression": "hasValue() or (children().count() > id.count())",
-            "xpath": "@value|f:*|h:div",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element"
-          },
-          {
             "key": "min-digits-sor",
+            "requirements": "SOR Identifiers are at minimum 15 digits long",
             "severity": "error",
             "human": "SOR Identifiers are at minimum 15 digits long. See https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/organisationsregistrering/adgang-til-sor/info-om-opbygningen-af-sor-ider.pdf",
             "expression": "matches('^([0-9]){15,}$')",

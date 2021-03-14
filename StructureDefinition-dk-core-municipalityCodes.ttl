@@ -14,10 +14,29 @@
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
-  fhir:StructureDefinition.name [ fhir:value "MunicipalityCodesExtension"];
+  fhir:StructureDefinition.name [ fhir:value "MunicipalityCodes"];
   fhir:StructureDefinition.title [ fhir:value "Danish Core Municipality codes"];
-  fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-14T15:55:39+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.status [ fhir:value "draft"];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-14T16:56:07+01:00"^^xsd:dateTime];
+  fhir:StructureDefinition.publisher [ fhir:value "HL7 Denmark"];
+  fhir:StructureDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.dk/" ]
+     ]
+  ];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DK" ]
+     ]
+  ];
+  fhir:StructureDefinition.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

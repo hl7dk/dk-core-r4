@@ -16,18 +16,30 @@
   "status": "draft",
   "experimental": true,
   "date": "2020-07-27",
-  "publisher": "ehealth.sundhed.dk",
+  "publisher": "HL7 Denmark",
   "contact": [
     {
+      "name": "HL7 Denmark",
       "telecom": [
         {
           "system": "url",
-          "value": "http://hl7.dk/fhir/"
+          "value": "https://www.hl7.dk/"
         }
       ]
     }
   ],
   "description": "CodeSystem supplement with danish translations for administrative gender",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DK"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
   "content": "supplement",
   "supplements": "http://hl7.org/fhir/administrative-gender",
   "concept": [
