@@ -14,7 +14,7 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier"/>
-  <version value="0.1.0"/>
+  <version value="0.9.0"/>
   <name value="DkCoreCprIdentifier"/>
   <title value="Danish Core Central Person Register Extension"/>
   <status value="draft"/>

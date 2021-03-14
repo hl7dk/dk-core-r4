@@ -6,10 +6,10 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>DK_Core</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core</pre></div>
   </text>
   <url value="http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core"/>
-  <version value="0.1.0"/>
+  <version value="0.9.0"/>
   <name value="DK_Core"/>
   <status value="draft"/>
-  <date value="2021-03-14T16:13:33+00:00"/>
+  <date value="2021-03-14T16:15:43+00:00"/>
   <packageId value="dk.fhir.ig.dk-core"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>

@@ -16,7 +16,7 @@
     }
   ],
   "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "name": "DkCorePatient",
   "title": "Danish Core Patient Profile",
   "status": "active",

@@ -9,7 +9,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p/><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">male<a name="administrative-gender-supplement-male"> </a></td></tr><tr><td style="white-space:nowrap">female<a name="administrative-gender-supplement-female"> </a></td></tr><tr><td style="white-space:nowrap">other<a name="administrative-gender-supplement-other"> </a></td></tr><tr><td style="white-space:nowrap">unknown<a name="administrative-gender-supplement-unknown"> </a></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Dansk (Danish, da)</b></td></tr><tr><td>male</td><td>Mand</td></tr><tr><td>female</td><td>Kvinde</td></tr><tr><td>other</td><td>Andet</td></tr><tr><td>unknown</td><td>Ukendt</td></tr></table></div>
   </text>
   <url value="http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement"/>
-  <version value="0.1.0"/>
+  <version value="0.9.0"/>
   <name value="AdministrativeGenderDkSupplement"/>
   <status value="draft"/>
   <experimental value="true"/>

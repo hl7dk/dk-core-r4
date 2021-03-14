@@ -22,7 +22,7 @@
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
   fhir:StructureDefinition.url [ fhir:value "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"];
-  fhir:StructureDefinition.version [ fhir:value "0.1.0"];
+  fhir:StructureDefinition.version [ fhir:value "0.9.0"];
   fhir:StructureDefinition.name [ fhir:value "DkCorePatient"];
   fhir:StructureDefinition.title [ fhir:value "Danish Core Patient Profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];

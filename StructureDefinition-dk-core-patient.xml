@@ -26,7 +26,7 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient"/>
-  <version value="0.1.0"/>
+  <version value="0.9.0"/>
   <name value="DkCorePatient"/>
   <title value="Danish Core Patient Profile"/>
   <status value="active"/>

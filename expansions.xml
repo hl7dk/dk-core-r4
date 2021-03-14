@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a31afc59-fa9a-4ad6-b2bd-6ce154c88c6c"/>
+  <id value="095766b4-d7d0-4b75-9a15-61df9d827efb"/>
   <meta>
-    <lastUpdated value="2021-03-14T16:13:33.231+00:00"/>
+    <lastUpdated value="2021-03-14T16:15:43.385+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -16,7 +16,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 1 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-cpr-identifier-system.html">DkCoreCprIdentifierSystem v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-dk-core-cpr-identifier-system.html">DkCoreCprIdentifierSystem v0.9.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
               <a href="CodeSystem-dk-core-cpr-identifier-system.html">
@@ -47,7 +47,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system"/>
-        <version value="0.1.0"/>
+        <version value="0.9.0"/>
         <name value="DK Valid Identifier"/>
         <title value="CPR Identifier"/>
         <status value="active"/>
@@ -70,8 +70,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:dcd28310-98c6-4d83-a2c1-85fa79527a0d"/>
-          <timestamp value="2021-03-14T16:13:44+00:00"/>
+          <identifier value="urn:uuid:7cb5528b-5328-4a58-a85c-dc4efe1c1a71"/>
+          <timestamp value="2021-03-14T16:15:56+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -79,7 +79,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|0.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system|0.9.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system"/>
@@ -103,10 +103,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">GreenlandMunicipalityCodes v0.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes-greenland.html">GreenlandMunicipalityCodes v0.9.0 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="CodeSystem-dk-core-municipality-codes.html">MunicipalityCodes v0.1.0 (CodeSystem)</a>
+                  <a href="CodeSystem-dk-core-municipality-codes.html">MunicipalityCodes v0.9.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -1065,7 +1065,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes"/>
-        <version value="0.1.0"/>
+        <version value="0.9.0"/>
         <name value="MunicipalityCodes"/>
         <status value="draft"/>
         <experimental value="true"/>
@@ -1087,8 +1087,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:e6beeeb1-0bdf-457d-99c3-18728ac834d4"/>
-          <timestamp value="2021-03-14T16:13:44+00:00"/>
+          <identifier value="urn:uuid:6f844e6f-b04a-4f71-b428-c9e25a4448d5"/>
+          <timestamp value="2021-03-14T16:15:56+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1096,11 +1096,11 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|0.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes|0.9.0"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|0.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland|0.9.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes"/>
@@ -1636,7 +1636,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">Regional subdivision codes v0.1.0 (CodeSystem)</a>
+              <a href="CodeSystem-dk-core-regional-subdivision-codes.html">Regional subdivision codes v0.9.0 (CodeSystem)</a>
             </p>
             <p>All codes from system 
               <a href="CodeSystem-dk-core-regional-subdivision-codes.html">
@@ -1699,7 +1699,7 @@
           </div>
         </text>
         <url value="http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes"/>
-        <version value="0.1.0"/>
+        <version value="0.9.0"/>
         <name value="RegionalSubdivisionCodes"/>
         <status value="draft"/>
         <experimental value="true"/>
@@ -1721,8 +1721,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:0461c280-c9ba-483d-98ae-51a37bff43a7"/>
-          <timestamp value="2021-03-14T16:13:44+00:00"/>
+          <identifier value="urn:uuid:9e6a8c09-4519-4919-bcd6-1a5c57883fab"/>
+          <timestamp value="2021-03-14T16:15:56+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1730,7 +1730,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|0.1.0"/>
+            <valueUri value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes|0.9.0"/>
           </parameter>
           <contains>
             <system value="http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes"/>

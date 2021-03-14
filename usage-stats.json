@@ -1,6 +1,6 @@
 {
   "package": "dk.fhir.ig.dk-core",
-  "version": "0.1.0",
+  "version": "0.9.0",
   "fhirVersion": "4.0.1",
   "extensions": [
     {

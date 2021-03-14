@@ -3,139 +3,139 @@
     "id": "administrative-gender-supplement",
     "type": "CodeSystem",
     "url": "http://hl7.dk/fhir/core/CodeSystem/administrative-gender-supplement",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "AdministrativeGenderDkSupplement"
   },
   {
     "id": "dk-core-cpr-identifier-system",
     "type": "CodeSystem",
     "url": "http://hl7.dk/fhir/core/CodeSystem/dk-core-cpr-identifier-system",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DkCoreCprIdentifierSystem"
   },
   {
     "id": "dk-core-municipality-codes",
     "type": "CodeSystem",
     "url": "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "MunicipalityCodes"
   },
   {
     "id": "dk-core-municipality-codes-greenland",
     "type": "CodeSystem",
     "url": "http://hl7.dk/fhir/core/CodeSystem/dk-core-municipality-codes-greenland",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "GreenlandMunicipalityCodes"
   },
   {
     "id": "dk-core-regional-subdivision-codes",
     "type": "CodeSystem",
     "url": "http://hl7.dk/fhir/core/CodeSystem/dk-core-regional-subdivision-codes",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "Regional subdivision codes"
   },
   {
     "id": "dk-marital-status",
     "type": "CodeSystem",
     "url": "http://hl7.dk/fhir/core/CodeSystem/dk-marital-status",
-    "version": "0.1.0"
+    "version": "0.9.0"
   },
   {
     "id": "dk.fhir.ig.dk-core",
     "type": "ImplementationGuide",
     "url": "http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DK_Core"
   },
   {
     "id": "cpr",
     "type": "NamingSystem",
     "url": "http://hl7.dk/fhir/core/NamingSystem/cpr",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DanishCivilRegistrationSystem"
   },
   {
     "id": "sor",
     "type": "NamingSystem",
     "url": "http://hl7.dk/fhir/core/NamingSystem/sor",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "Sundhedsvæsenets Organisationsregister (SOR)"
   },
   {
     "id": "dk-core-RegionalSubDivisionCodes",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-RegionalSubDivisionCodes",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "RegionalSubDivisionCodes"
   },
   {
     "id": "dk-core-authorization-identifier",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "AuthorizationIdentifier"
   },
   {
     "id": "dk-core-cpr-identifier",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-cpr-identifier",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DkCoreCprIdentifier"
   },
   {
     "id": "dk-core-municipalityCodes",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-municipalityCodes",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "MunicipalityCodes"
   },
   {
     "id": "dk-core-patient",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DkCorePatient"
   },
   {
     "id": "dk-core-sor-identifier",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/dk-core-sor-identifier",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "SORIdentifier"
   },
   {
     "id": "lpr3-Identifier",
     "type": "StructureDefinition",
     "url": "http://hl7.dk/fhir/core/StructureDefinition/lpr3-Identifier",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "Lpr3Identifier"
   },
   {
     "id": "dk-core-MunicipalityCodes",
     "type": "ValueSet",
     "url": "http://hl7.dk/fhir/core/ValueSet/dk-core-MunicipalityCodes",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "MunicipalityCodes"
   },
   {
     "id": "dk-core-RegionalSubDivisionCodes",
     "type": "ValueSet",
     "url": "http://hl7.dk/fhir/core/ValueSet/dk-core-RegionalSubDivisionCodes",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "RegionalSubdivisionCodes"
   },
   {
     "id": "dk-core-cpr-identifier-system",
     "type": "ValueSet",
     "url": "http://hl7.dk/fhir/core/ValueSet/dk-core-cpr-identifier-system",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DK Valid Identifier"
   },
   {
     "id": "dk-marital-status",
     "type": "ValueSet",
     "url": "http://hl7.dk/fhir/core/ValueSet/dk-marital-status",
-    "version": "0.1.0",
+    "version": "0.9.0",
     "name": "DK Marital Status Codes"
   }
 ]
