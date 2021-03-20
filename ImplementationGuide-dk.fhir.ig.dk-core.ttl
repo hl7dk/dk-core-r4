@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.9.0"];
   fhir:ImplementationGuide.name [ fhir:value "DK_Core"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-14T16:15:43+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-20T09:59:33+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.packageId [ fhir:value "dk.fhir.ig.dk-core"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [

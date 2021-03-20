@@ -1,9 +1,9 @@
 ﻿DK_Core : Validation Results
 =========================================
 
-err = 4, warn = 16, info = 9
-IG Publisher Version: 1.1.63
-Generated Sun Mar 14 16:16:04 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.9.0 (canonical = http://hl7.dk/fhir/core)
+err = 2, warn = 16, info = 9
+IG Publisher Version: 1.1.64
+Generated Sat Mar 20 09:59:54 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.9.0 (canonical = http://hl7.dk/fhir/core)
 
  Build Errors : 143 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 0 / 0 / 2
@@ -19,10 +19,10 @@ Generated Sun Mar 14 16:16:04 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-cor
  /github/workspace/fsh-generated/resources/Patient-bubber : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-mogensen : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-ukendt : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-cpr-identifier : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-lpr3-Identifier : 0 / 1 / 1
@@ -222,7 +222,6 @@ INFORMATION: Patient/ukendt: Patient.identifier[0]: This element does not match 
 INFORMATION: Patient/ukendt: Patient.name[0]: This element does not match any known slice defined in the profile http://hl7.dk/fhir/core/StructureDefinition/dk-core-patient
 == /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-RegionalSubDivisionCodes.json ==
 INFORMATION: StructureDefinition/dk-core-RegionalSubDivisionCodes: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/dk-core-RegionalSubDivisionCodes: StructureDefinition.snapshot.element[3].fixed.ofType(uri): The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])
 == /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-authorization-identifier.json ==
 INFORMATION: StructureDefinition/dk-core-authorization-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefinition/dk-core-authorization-identifier'): The Implementation Guide contains no examples for this data type profile
@@ -230,7 +229,6 @@ WARNING: StructureDefinition.where(url = 'http://hl7.dk/fhir/core/StructureDefin
 INFORMATION: StructureDefinition/dk-core-cpr-identifier: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-municipalityCodes.json ==
 INFORMATION: StructureDefinition/dk-core-municipalityCodes: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/dk-core-municipalityCodes: StructureDefinition.snapshot.element[3].fixed.ofType(uri): The element Extension.url has a fixed of type uri, which is not in the list of allowed types ([http://hl7.org/fhirpath/System.String])
 == /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-patient.json ==
 INFORMATION: StructureDefinition/dk-core-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-dk-core-sor-identifier.json ==
