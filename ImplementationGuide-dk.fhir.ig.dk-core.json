@@ -9,7 +9,7 @@
   "version": "0.9.0",
   "name": "DK_Core",
   "status": "draft",
-  "date": "2021-03-20T10:05:15+00:00",
+  "date": "2021-03-20T10:06:24+00:00",
   "packageId": "dk.fhir.ig.dk-core",
   "license": "CC0-1.0",
   "fhirVersion": [
