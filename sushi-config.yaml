@@ -1,15 +1,22 @@
 # ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
-# │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration                     │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: dk.fhir.ig.dk-core
 canonical: http://hl7.dk/fhir/core
 name: DK_Core
+title: "HL7 FHIR Implementation Guide: DK Core"
+description: A FHIR Implementation Guide for the Danish common needs across healthcare sectors
 status: draft
 version: 0.9.0
 fhirVersion: 4.0.1
 copyrightYear: 2021+
+license: CC0-1.0
 releaseLabel: ci-build
+publisher:
+  name: HL7 Denmark
+  url: http://www.hl7.dk
+  email: jenskristianvilladsen@gmail.com
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │

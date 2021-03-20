@@ -26,5 +26,5 @@ FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group
 ### Collaboration
 This guide is the product of collaborative work undertaken with participants from:
 
-* [Danish FHIR Implementers Community]
+* [Danish FHIR Implementers Community](https://confluence.hl7.org/display/HD/DK+FHIR+SIG)
 * [HL7 Denmark](https://www.hl7.dk)
