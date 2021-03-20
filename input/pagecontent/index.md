@@ -19,8 +19,8 @@ This document presents Danish use concepts defined via FHIR processable artefact
 
 FHIR profiles are managed under HL7 Denmark in the HL7 Danish FHIR working group:
 
-* [Source](https://github.com/hl7dk/dk-core-r4)
-* [Wiki](https://github.com/hl7dk/dk-core-r4)
+* [Source](https://github.com/hl7dk/dk-core)
+* [Wiki](https://github.com/hl7dk/dk-core)
 
 
 ### Collaboration
