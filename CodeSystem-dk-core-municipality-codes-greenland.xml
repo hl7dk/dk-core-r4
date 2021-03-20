@@ -16,7 +16,11 @@
     <name value="HL7 Denmark"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.dk/"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
     </telecom>
   </contact>
   <description value="Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"/>

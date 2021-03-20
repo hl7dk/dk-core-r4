@@ -10,13 +10,29 @@
   fhir:Resource.id [ fhir:value "dk.fhir.ig.dk-core"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DK_Core</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DK_Core</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core</pre><div><p>A FHIR Implementation Guide for the Danish common needs across healthcare sectors</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "http://hl7.dk/fhir/core/ImplementationGuide/dk.fhir.ig.dk-core"];
   fhir:ImplementationGuide.version [ fhir:value "0.9.0"];
   fhir:ImplementationGuide.name [ fhir:value "DK_Core"];
+  fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: DK Core"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-03-20T10:06:24+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-20T14:31:42+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Denmark"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "HL7 Denmark" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "A FHIR Implementation Guide for the Danish common needs across healthcare sectors"];
   fhir:ImplementationGuide.packageId [ fhir:value "dk.fhir.ig.dk-core"];
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
   fhir:ImplementationGuide.fhirVersion [

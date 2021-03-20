@@ -16,7 +16,11 @@
     <name value="HL7 Denmark"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.dk/"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
     </telecom>
   </contact>
   <description value="Municipality codes as defined by https://danmarksadresser.dk/adressedata/kodelister/kommunekodeliste/ and https://sundhedsdatastyrelsen.dk/-/media/sds/filer/rammer-og-retningslinjer/patientregistrering/relaterede/kommuneklassifikation.pdf"/>

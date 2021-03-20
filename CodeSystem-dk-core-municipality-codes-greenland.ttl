@@ -25,7 +25,11 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.dk/" ]
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
      ]
   ];
   fhir:CodeSystem.description [ fhir:value "Greenland municipality codes as defined by https://www.iso.org/obp/ui/#iso:code:3166:GL and https://cpr.dk/cpr-systemet/kommunesammenlaegninger-opdeling/groenland-2018/"];

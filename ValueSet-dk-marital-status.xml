@@ -17,7 +17,11 @@
     <name value="HL7 Denmark"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.dk/"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
     </telecom>
   </contact>
   <description value="This value set defines the set of codes that can be used to indicate the marital status of a person in Denmark."/>

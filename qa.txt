@@ -3,9 +3,9 @@
 
 err = 2, warn = 16, info = 9
 IG Publisher Version: 1.1.64
-Generated Sat Mar 20 10:06:47 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.9.0 (canonical = http://hl7.dk/fhir/core)
+Generated Sat Mar 20 14:32:02 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.9.0 (canonical = http://hl7.dk/fhir/core)
 
- Build Errors : 143 / 6 / 0
+ Build Errors : 1 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-cpr-identifier-system : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-dk-core-municipality-codes : 0 / 0 / 1
@@ -39,148 +39,6 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-sor-identifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-municipalityCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/dk-core-RegionalSubDivisionCodes.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/CodeSystem-administrative-gender-supplement.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-administrative-gender-supplement.html#/html/body/div/div/div/p/a at Line 206, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-administrative-gender-supplement.json.html#/html/body/div/div/div/p/a at Line 267, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-administrative-gender-supplement.ttl.html#/html/body/div/div/div/p/a at Line 270, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-administrative-gender-supplement.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-cpr-identifier-system.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-cpr-identifier-system.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-cpr-identifier-system.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-cpr-identifier-system.ttl.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-cpr-identifier-system.xml.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes-greenland.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes-greenland.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes-greenland.json.html#/html/body/div/div/div/p/a at Line 276, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes-greenland.ttl.html#/html/body/div/div/div/p/a at Line 273, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes-greenland.xml.html#/html/body/div/div/div/p/a at Line 258, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes.json.html#/html/body/div/div/div/p/a at Line 1216, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes.ttl.html#/html/body/div/div/div/p/a at Line 1025, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-municipality-codes.xml.html#/html/body/div/div/div/p/a at Line 1009, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-regional-subdivision-codes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-regional-subdivision-codes.html#/html/body/div/div/div/p/a at Line 208, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-regional-subdivision-codes.json.html#/html/body/div/div/div/p/a at Line 275, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-regional-subdivision-codes.ttl.html#/html/body/div/div/div/p/a at Line 272, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-core-regional-subdivision-codes.xml.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-marital-status.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-marital-status.html#/html/body/div/div/div/p/a at Line 206, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-marital-status.json.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-marital-status.ttl.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-dk-marital-status.xml.html#/html/body/div/div/div/p/a at Line 230, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-cpr.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-cpr.html#/html/body/div/div/div/p/a at Line 185, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-cpr.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-cpr.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-cpr.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-sor.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-sor.html#/html/body/div/div/div/p/a at Line 185, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-sor.json.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-sor.ttl.html#/html/body/div/div/div/p/a at Line 244, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/NamingSystem-sor.xml.html#/html/body/div/div/div/p/a at Line 231, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-283.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-283.html#/html/body/div/div/div/p/a at Line 182, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-283.json.html#/html/body/div/div/div/p/a at Line 269, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-283.ttl.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-283.xml.html#/html/body/div/div/div/p/a at Line 249, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-bubber.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-bubber.html#/html/body/div/div/div/p/a at Line 182, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-bubber.json.html#/html/body/div/div/div/p/a at Line 233, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-bubber.ttl.html#/html/body/div/div/div/p/a at Line 245, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-bubber.xml.html#/html/body/div/div/div/p/a at Line 219, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-mogensen.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-mogensen.html#/html/body/div/div/div/p/a at Line 182, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-mogensen.json.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-mogensen.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-mogensen.xml.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-ukendt.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-ukendt.html#/html/body/div/div/div/p/a at Line 182, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-ukendt.json.html#/html/body/div/div/div/p/a at Line 214, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-ukendt.ttl.html#/html/body/div/div/div/p/a at Line 227, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/Patient-ukendt.xml.html#/html/body/div/div/div/p/a at Line 206, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes-definitions.html#/html/body/div/div/div/p/a at Line 304, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes-mappings.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes.html#/html/body/div/div/div/p/a at Line 491, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.json.html#/html/body/div/div/div/p/a at Line 722, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.ttl.html#/html/body/div/div/div/p/a at Line 662, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-RegionalSubDivisionCodes.profile.xml.html#/html/body/div/div/div/p/a at Line 652, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier-definitions.html#/html/body/div/div/div/p/a at Line 323, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier-mappings.html#/html/body/div/div/div/p/a at Line 258, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier.html#/html/body/div/div/div/p/a at Line 505, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 781, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 713, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-authorization-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 717, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier-definitions.html#/html/body/div/div/div/p/a at Line 430, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier-mappings.html#/html/body/div/div/div/p/a at Line 276, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier.html#/html/body/div/div/div/p/a at Line 578, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 1330, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 1171, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-cpr-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 1205, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes-definitions.html#/html/body/div/div/div/p/a at Line 304, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes-mappings.html#/html/body/div/div/div/p/a at Line 239, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes.html#/html/body/div/div/div/p/a at Line 491, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes.profile.json.html#/html/body/div/div/div/p/a at Line 722, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes.profile.ttl.html#/html/body/div/div/div/p/a at Line 662, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-municipalityCodes.profile.xml.html#/html/body/div/div/div/p/a at Line 652, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient-definitions.html#/html/body/div/div/div/p/a at Line 1054, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient-examples.html#/html/body/div/div/div/p/a at Line 268, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient-mappings.html#/html/body/div/div/div/p/a at Line 404, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient.html#/html/body/div/div/div/p/a at Line 1084, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient.profile.history.html#/html/body/div/div/div/p/a at Line 228, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient.profile.json.html#/html/body/div/div/div/p/a at Line 4255, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient.profile.ttl.html#/html/body/div/div/div/p/a at Line 3676, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-patient.profile.xml.html#/html/body/div/div/div/p/a at Line 3817, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier-definitions.html#/html/body/div/div/div/p/a at Line 323, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier-mappings.html#/html/body/div/div/div/p/a at Line 258, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier.html#/html/body/div/div/div/p/a at Line 507, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier.profile.json.html#/html/body/div/div/div/p/a at Line 787, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 718, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-dk-core-sor-identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 721, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier-definitions.html#/html/body/div/div/div/p/a at Line 322, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier-examples.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier-mappings.html#/html/body/div/div/div/p/a at Line 258, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier.html#/html/body/div/div/div/p/a at Line 505, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier.profile.history.html#/html/body/div/div/div/p/a at Line 218, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier.profile.json.html#/html/body/div/div/div/p/a at Line 781, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier.profile.ttl.html#/html/body/div/div/div/p/a at Line 713, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-lpr3-Identifier.profile.xml.html#/html/body/div/div/div/p/a at Line 714, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-MunicipalityCodes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-MunicipalityCodes.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-MunicipalityCodes.json.html#/html/body/div/div/div/p/a at Line 232, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-MunicipalityCodes.ttl.html#/html/body/div/div/div/p/a at Line 237, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-MunicipalityCodes.xml.html#/html/body/div/div/div/p/a at Line 224, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-RegionalSubDivisionCodes.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-RegionalSubDivisionCodes.html#/html/body/div/div/div/p/a at Line 246, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-RegionalSubDivisionCodes.json.html#/html/body/div/div/div/p/a at Line 229, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-RegionalSubDivisionCodes.ttl.html#/html/body/div/div/div/p/a at Line 235, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-RegionalSubDivisionCodes.xml.html#/html/body/div/div/div/p/a at Line 220, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-cpr-identifier-system.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-cpr-identifier-system.html#/html/body/div/div/div/p/a at Line 247, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-cpr-identifier-system.json.html#/html/body/div/div/div/p/a at Line 236, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-cpr-identifier-system.ttl.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-core-cpr-identifier-system.xml.html#/html/body/div/div/div/p/a at Line 226, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-marital-status.change.history.html#/html/body/div/div/div/p/a at Line 197, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-marital-status.html#/html/body/div/div/div/p/a at Line 248, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-marital-status.json.html#/html/body/div/div/div/p/a at Line 257, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-marital-status.ttl.html#/html/body/div/div/div/p/a at Line 256, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-dk-marital-status.xml.html#/html/body/div/div/div/p/a at Line 240, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/p/a at Line 443, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/downloads.html#/html/body/div/div/div/p/a at Line 176, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/extensions.html#/html/body/div/div/div/p/a at Line 140, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/guidance.html#/html/body/div/div/div/p/a at Line 163, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/index.html#/html/body/div/div/div/p/a at Line 192, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/profiles.html#/html/body/div/div/div/p/a at Line 155, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/terminology.html#/html/body/div/div/div/p/a at Line 166, column 28: The link '' for "" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/p/a at Line 133, column 28: The link '' for "" cannot be resolved
 == /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement.json ==
 INFORMATION: CodeSystem/administrative-gender-supplement: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 INFORMATION: CodeSystem/administrative-gender-supplement: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/shareablecodesystem - listed in meta

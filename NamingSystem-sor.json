@@ -16,7 +16,11 @@
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.hl7.dk/"
+          "value": "http://www.hl7.dk"
+        },
+        {
+          "system": "email",
+          "value": "jenskristianvilladsen@gmail.com"
         }
       ]
     }

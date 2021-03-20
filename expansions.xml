@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="cce625c8-7bc0-45ed-b630-b7919ec4245a"/>
+  <id value="73fb78b6-4635-4242-bae3-04e3b29f4649"/>
   <meta>
-    <lastUpdated value="2021-03-20T10:06:24.719+00:00"/>
+    <lastUpdated value="2021-03-20T14:31:42.628+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -58,7 +58,11 @@
           <name value="HL7 Denmark"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.hl7.dk/"/>
+            <value value="http://www.hl7.dk"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="jenskristianvilladsen@gmail.com"/>
           </telecom>
         </contact>
         <description value="This value set defines the set of codes that can be used to identify the danish CPR system."/>
@@ -70,8 +74,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:59ea2146-cfa1-4cfd-bfe6-0fd0aa67cbee"/>
-          <timestamp value="2021-03-20T10:06:38+00:00"/>
+          <identifier value="urn:uuid:9a0ab30a-2ed2-4e58-a67d-7f5482ded9f2"/>
+          <timestamp value="2021-03-20T14:31:55+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1075,7 +1079,11 @@
           <name value="HL7 Denmark"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.hl7.dk/"/>
+            <value value="http://www.hl7.dk"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="jenskristianvilladsen@gmail.com"/>
           </telecom>
         </contact>
         <description value="Municipality codes used in Denmark"/>
@@ -1087,8 +1095,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:70dbc3b9-cb75-4c9c-bbd8-c80cbb5f321d"/>
-          <timestamp value="2021-03-20T10:06:38+00:00"/>
+          <identifier value="urn:uuid:f25ebc65-2a56-43aa-9513-ed970a43eb55"/>
+          <timestamp value="2021-03-20T14:31:55+00:00"/>
           <total value="104"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1709,7 +1717,11 @@
           <name value="HL7 Denmark"/>
           <telecom>
             <system value="url"/>
-            <value value="https://www.hl7.dk/"/>
+            <value value="http://www.hl7.dk"/>
+          </telecom>
+          <telecom>
+            <system value="email"/>
+            <value value="jenskristianvilladsen@gmail.com"/>
           </telecom>
         </contact>
         <description value="Subdivision codes (Regional codes) used in Denmark"/>
@@ -1721,8 +1733,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:c43570be-a69c-4500-b535-741ebf27b621"/>
-          <timestamp value="2021-03-20T10:06:38+00:00"/>
+          <identifier value="urn:uuid:76a59e38-8ea8-48a2-9adc-15bc59e013dc"/>
+          <timestamp value="2021-03-20T14:31:55+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

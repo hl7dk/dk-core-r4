@@ -25,7 +25,11 @@
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.dk/" ]
+       fhir:ContactPoint.value [ fhir:value "http://www.hl7.dk" ]
+     ], [
+       fhir:index 1;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "jenskristianvilladsen@gmail.com" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "Subdivision codes (Regional codes) used in Denmark"];

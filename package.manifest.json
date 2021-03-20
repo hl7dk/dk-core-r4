@@ -1,6 +1,6 @@
 {
   "version": "0.9.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20210320100558",
+  "date": "20210320143117",
   "name": "dk.fhir.ig.dk-core"
 }

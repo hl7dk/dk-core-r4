@@ -15,7 +15,11 @@
     <name value="HL7 Denmark"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.dk/"/>
+      <value value="http://www.hl7.dk"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="jenskristianvilladsen@gmail.com"/>
     </telecom>
   </contact>
   <responsible value="The Health Service&#39;s Organizational Register was developed in the National Board of Health in 2006-2007 in cooperation with the regions and MedCom"/>
