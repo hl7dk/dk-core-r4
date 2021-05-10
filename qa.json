@@ -3,7 +3,7 @@
   "name": "DK_Core",
   "package-id": "dk.fhir.ig.dk-core",
   "ig-ver": "0.9.0",
-  "date": "Mon, 26 Apr, 2021 15:28:48 +0000",
+  "date": "Mon, 10 May, 2021 13:56:53 +0000",
   "errs": 2,
   "warnings": 16,
   "hints": 9,
