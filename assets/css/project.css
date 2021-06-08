@@ -48,7 +48,7 @@ var(--publish-box-border); */
   --ig-status-text-color: maroon; /* 1. IG Title and status text color */
   --navbar-bg-color: #7b1fad; /* 2. Header container color */
   --footer-bg-color: #707070; /* 3. Footer background color*/
-  --footer-container-color: #7b1fad; /* 4. Footer container color */
+  --footer-container-bg-color: #7b1fad; /* 4. Footer container color */
   --stripe-bg-color: #999999; /* 5. Header strip color */
 
   --btn-hover-color: #9b2fdd;  /* 6. Menu button hover color */
@@ -72,6 +72,17 @@ var(--publish-box-border); */
 
   --ig-header-color: #f5f5f5; /* 21. Header color (sides) */
   --ig-header-container-color: #ffffff; /* 22. Header container color (center) */
+  --footer-nav-bg-color: #f5f5f5; /* 23. Footer navigation background color*/
+
+  --footer-text-color: #ffffff; /* 24. Footer highlight font color */
+  --footer-hyperlink-text-color: #81BEF7; /* 25. Footer hyperlinks font color */
+  --footer-highlight-text-color: #ffff77; /* 26. Footer highlight font color */
+
+  --breadcrumb-bg-color: #f5f5f5; /* 27. Breadcrumb font color */
+  --breadcrumb-text-color: ##555555; /* 28. Breadcrumb font color */
+
+  --dragon-background-color: #fffbf7; /* 29. Dragon background color */
+  --dragon-text-color: #101020; /* 30. Dragon font color */
 
 }
 
@@ -103,8 +114,8 @@ body {
 }
 
 #segment-footer > .container {
-  background-color: var(--footer-container-color);
-  color: #ffffff;
+  background-color: var(--footer-container-bg-color);
+  color: var(--footer-text-color);
 }
 .navbar-inverse {
   background-color: var(--navbar-bg-color);
@@ -118,6 +129,7 @@ body {
 #segment-footer > .container .inner-wrapper > p {
   padding-bottom: 0px;
   margin-bottom: 0px;
+  color:var(--footer-text-color); 
 }
 #segment-post-footer {
   background-color: #f5f5f5;
@@ -215,6 +227,25 @@ body {
   background-color: var(--publish-box-bg-color);
   border: var(--publish-box-border);
   padding: 5px;
+}
+
+.dragon {
+  border: 1px solid maroon;
+  padding: 10px;
+  background-color: var(--dragon-background-color);
+  min-height: 160px;
+  color: var(--dragon-text-color);
+}
+
+.dragon::before {
+  content: "";
+  background-image: url('../images/dragon.png');
+  background-size: 150px 150px;
+  display: inline-block;
+  float:left; 
+  margin-right: 10px;
+  width: 150px;
+  height: 150px;
 }
 
 .note-to-balloters, .stu-note {
@@ -434,9 +465,10 @@ a:focus {
 }
 .breadcrumb {
   margin-bottom: 0;
+  background-color: var(--breadcrumb-bg-color);;
 }
 .breadcrumb a {
-  color: #555555;
+  color: var(--breadcrumb-text-color);
 }
 .nav-listing {
   overflow: hidden;
@@ -593,7 +625,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 /* ============ downloads css ============= */
 
-a[href$=".sch"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".xml"]:not([no-download^="true"]):after, a[href$=".json"]:not([no-download^="true"]):after, a[href$=".csv"]:after, a[href$=".ttl"]:not([no-download^="true"]):after {
+a[href$=".sch"]:after, a[href$=".xlsx"]:after, a[href$=".zip"]:after, a[href$=".tgz"]:after, a[href$=".xml"]:not([no-download^="true"]):after, a[href$=".json"]:not([no-download^="true"]):after, a[href$=".csv"]:after, a[href$=".ttl"]:not([no-download^="true"]):after {
   content: url(../images/download.png);
   display: inline-block;
   text-decoration: none;
