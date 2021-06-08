@@ -3,7 +3,7 @@
 
 err = 2, warn = 16, info = 9
 IG Publisher Version: 1.1.73
-Generated Tue Jun 08 08:36:33 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.9.0 (canonical = http://hl7.dk/fhir/core)
+Generated Tue Jun 08 08:37:46 UTC 2021. FHIR version 4.0.1 for dk.fhir.ig.dk-core#0.9.0 (canonical = http://hl7.dk/fhir/core)
 
  Build Errors : 1 / 6 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-administrative-gender-supplement : 0 / 0 / 2
