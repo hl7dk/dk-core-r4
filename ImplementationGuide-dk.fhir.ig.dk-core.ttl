@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "DK_Core"];
   fhir:ImplementationGuide.title [ fhir:value "HL7 FHIR Implementation Guide: DK Core"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-06-28T10:08:41+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-28T10:21:03+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "HL7 Denmark"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
