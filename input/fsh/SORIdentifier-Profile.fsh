@@ -15,4 +15,4 @@ Id: dk-core-sor-identifier
 * system = "urn:oid:1.2.208.176.1.1" (exactly)
 * value 1..
 * value obeys min-digits-sor
-* value ^constraint[1].requirements = "SOR Identifiers are at minimum 15 digits long"
+* value ^constraint[1].requirements = "SOR Identifiers are at minimum 11 digits long"
