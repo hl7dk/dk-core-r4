@@ -80,7 +80,7 @@
   fhir:Patient.generalPractitioner [
      fhir:index 0;
      fhir:Reference.identifier [
-       fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.4" ];
+       fhir:Identifier.system [ fhir:value "urn:oid:1.2.208.176.1.1" ];
        fhir:Identifier.value [ fhir:value "79641000016006" ]
      ];
      fhir:Reference.display [ fhir:value "Peter Sønderby" ]

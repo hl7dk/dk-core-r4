@@ -76,7 +76,7 @@
   "generalPractitioner": [
     {
       "identifier": {
-        "system": "urn:oid:1.2.208.176.1.4",
+        "system": "urn:oid:1.2.208.176.1.1",
         "value": "79641000016006"
       },
       "display": "Peter Sønderby"
