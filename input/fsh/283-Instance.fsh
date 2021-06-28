@@ -22,6 +22,6 @@ Usage: #example
 * address[0].postalCode = "8000"
 * address[0].country = "DK"
 * maritalStatus = $v3-MaritalStatus#U "unmarried"
-* generalPractitioner[0].identifier.system = "urn:oid:1.2.208.176.1.4"
+* generalPractitioner[0].identifier.system = "urn:oid:1.2.208.176.1.1"
 * generalPractitioner[0].identifier.value = "79641000016006"
 * generalPractitioner[0].display = "Peter Sønderby"
